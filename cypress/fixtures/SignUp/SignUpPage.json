@@ -1,0 +1,29 @@
+{
+    "validUser": {
+        "userId": "automationTest123",
+        "password": "automationTest",
+        "emailId": "automation123@gmail.com",
+        "confirmPassword": "automationTest",
+        "companyName": "automation",
+        "contactName": "Automation T",
+        "jobTitle": "QA",
+        "addressLine": "Flat no: 0152, SQ High Hill Pune",
+        "city": "Pune",
+        "country": "India",
+        "dialCode": "India (भारत)",
+        "phoneNumber": "9865723656"
+    },
+    "invalidUser": {
+        "userId": "     67382@#$%",
+        "password": "       ",
+        "emailId": "%%^&b ",
+        "confirmPassword": "     ",
+        "companyName": "728973&*(",
+        "contactName": "&**^&*((*&",
+        "jobTitle": "^&*(&&*",
+        "addressLine": "&*((((",
+        "city": "*****",
+        "selectCountry": "******",
+        "phoneNumber": "(((((("
+    }
+}

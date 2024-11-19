@@ -1,0 +1,40 @@
+{
+    "establishmentPhysicalAddress": {
+        "companyName" : "KimmyTest",
+        "feiNumber" : "10",
+        "addressLine1" : "Flat no: 0152, SQ High Hill Pune",
+        "addressLine2" : "Flat no: 012, SQ High Hill Pune",
+        "city" : "Pune",
+        "state" : "MH",
+        "postalCode" : "20012",
+        "dunsNumber" : "10",
+        "country": "India"
+    },
+    "mailingAddress": {
+        "companyName" : "KimmyTest1",
+        "feiNumber" : "101",
+        "addressLine1" : "Flat no: 02, SQ High Hill Pune",
+        "addressLine2" : "Flat no: 01, SQ High Hill Pune",
+        "city" : "Mumbai",
+        "state" : "MH",
+        "postalCode" : "20011",
+        "dunsNumber" : "110",
+        "country": "India"
+    },
+    "ownerOperator": {
+        "contactPerson" : "Kimmy",
+        "contactPhone" : "9988774455",
+        "contactEmail" : "kimmyTest@gmail.com"
+    },
+    "importers": {
+        "companyName" : "Abc",
+        "phone" : "8866554422",
+        "email" : "abc@gmail.com",
+        "duns" : "123546782"
+    },
+    "payment": {
+        "name" : "Abc",
+        "title" : "QA",
+        "email" : "abc@gmail.com"
+    }
+}

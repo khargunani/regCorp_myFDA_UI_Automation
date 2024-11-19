@@ -1,0 +1,33 @@
+{
+    "adminUser": {
+        "desiredUserId": "AdminTestUser",
+        "emailAddress": "AdminTest123@gmail.com",
+        "contactName": "Admin Test",
+        "jobTitle": "QA",
+        "password": "AdminTest123",
+        "confirmPassword": "AdminTest123"
+    },
+    "subUser": {
+        "desiredUserId": "SubTestUser",
+        "emailAddress": "AutomationSub123@gmail.com",
+        "contactName": "Automation Sub User",
+        "jobTitle": "Junior QA",
+        "password": "AutomationSub123",
+        "confirmPassword": "AutomationSub123"
+    },
+        "subUserAccess": {
+            "0": { "key": "foodFacilityInformation", "description": "Food facility registration information" },
+            "1": { "key": "fdaComplyHubInformation", "description": "FDA ComplyHub information" },
+            "2": { "key": "priorNoticeInformation", "description": "Prior Notice Express information" },
+            "3": { "key": "fce-sidInformation", "description": "FCE-SID information" },
+            "4": { "key": "masterFileInformation", "description": "Master File information" },
+            "5": { "key": "medicalDeviceInformation", "description": "Medical Device information" },
+            "6": { "key": "drugInformation", "description": "Drug information" },
+            "7": { "key": "cosmeticInformation", "description": "Cosmetic information" },
+            "8": { "key": "fsvpAgentInformation", "description": "FSVP Agent information" },
+            "9": { "key": "ttb", "description": "TTB" },
+            "10": { "key": "adverseEventReportingSystem", "description": "Adverse Event Reporting System" },
+            "11": { "key": "paymentInformation", "description": "Payment information" }
+        }
+    
+}
