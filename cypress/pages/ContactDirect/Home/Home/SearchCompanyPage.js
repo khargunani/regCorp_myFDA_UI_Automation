@@ -6,7 +6,7 @@ class HomePage{
 
 
     goForCompany(){
-        cy.get(this.CompanySearch).click().type("NewTest Company");
+        cy.get(this.CompanySearch).click().type("Automation Test");
         cy.wait(200);
         cy.get(this.CompanySearchButton).click(); 
     }

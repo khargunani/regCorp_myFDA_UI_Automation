@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd" xmlns="urn:hl7-org:v3">
+  <id root="cc1d8965-845a-e89c-e053-2995a90a8a59"/>
+  <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+  <title>Mineral Sunscreen SPF 50</title>
+  <effectiveTime value="20210916"/>
+  <setId root="647e1a86-6d05-39da-e053-2991aa0ada63"/>
+  <versionNumber value="3"/>
+  <author>
+    <time/>
+    <assignedEntity>
+      <representedOrganization>
+        <id root="1.3.6.1.4.1.519.1" extension="836136630"/>
+        <name>Young Living Essential Oils, LC</name>
+        <assignedEntity>
+          <assignedOrganization>
+            <assignedEntity>
+              <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="B"/>
+              <assignedOrganization>
+                <id root="1.3.6.1.4.1.519.1" extension="744660692"/>
+                <name>WILD CHILD W A PTY LTD</name>
+              </assignedOrganization>
+              <performance>
+                <actDefinition>
+                  <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <manufacturedMaterialKind>
+                        <code code="70631-137" codeSystem="2.16.840.1.113883.6.69"/>
+                      </manufacturedMaterialKind>
+                    </manufacturedProduct>
+                  </product>
+                </actDefinition>
+              </performance>
+            </assignedEntity>
+          </assignedOrganization>
+        </assignedEntity>
+      </representedOrganization>
+    </assignedEntity>
+  </author>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <id root="cc1e03bd-5afd-91ba-e053-2995a90a76a9"/>
+          <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+          <effectiveTime value="20210916"/>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="70631-137" codeSystem="2.16.840.1.113883.6.69"/>
+                <name>Mineral Sunscreen SPF 50</name>
+                <formCode code="C29167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LOTION"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>Zinc oxide</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="D5340Y2I9G" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>CASTOR OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="O97ZV7726K" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>HELICHRYSUM ITALICUM FLOWER OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="H74221J5J4" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>MYRRH OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="MZQ63P0N0W" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>POLYGLYCERYL-3 RICINOLEATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="67GS9BGA2X" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>LABDANUM OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="67ZYA5T02K" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>FRANKINCENSE OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="X33R8U0062" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>ISOSTEARIC ACID</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="Q9L0O73W7L" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>COCONUT OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="2ZA36H0S2V" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>YELLOW WAX</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="3W1JG795YI" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>SUNFLOWER OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="C9H2L21V7U" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>MEDIUM-CHAIN TRIGLYCERIDES</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="R0ZB2556P8" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>TOCOPHEROL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="ZBP1YXW0H8" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>LAVENDER OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="8YOY78GNNX" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>CANANGA OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="595AO13F11" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>CARROT SEED OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="8D9H4QU99H" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>COCO-CAPRYLATE/CAPRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator unit="g" value="22"/>
+                    <denominator unit="g" value="100"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>ZINC OXIDE</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                        <name>ZINC OXIDE</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <quantity>
+                    <numerator value="85" unit="g"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="70631-137-85" codeSystem="2.16.840.1.113883.6.69"/>
+                    <formCode code="C42794" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TUBE"/>
+                  </containerPackagedProduct>
+                  <subjectOf>
+                    <characteristic>
+                      <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                      <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                    </characteristic>
+                  </subjectOf>
+                  <subjectOf>
+                    <marketingAct>
+                      <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                      <statusCode code="active"/>
+                      <effectiveTime>
+                        <low value="20210723"/>
+                      </effectiveTime>
+                    </marketingAct>
+                  </subjectOf>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <approval>
+                  <id extension="part352" root="2.16.840.1.113883.3.149"/>
+                  <code code="C73604" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC monograph not final"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <marketingAct>
+                  <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                  <statusCode code="active"/>
+                  <effectiveTime>
+                    <low value="20210723"/>
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <subjectOf>
+                <characteristic classCode="OBS">
+                  <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                  <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE">
+                    <originalText>OPAQUE LOTION, WHITE TO OFF WHITE</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="70631-241" codeSystem="2.16.840.1.113883.6.69"/>
+                <name>Mineral Sunscreen SPF 50</name>
+                <formCode code="C29167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LOTION"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>Zinc oxide</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="D5340Y2I9G" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>CASTOR OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="O97ZV7726K" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>HELICHRYSUM ITALICUM FLOWER OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="H74221J5J4" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>MYRRH OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="MZQ63P0N0W" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>POLYGLYCERYL-3 RICINOLEATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="67GS9BGA2X" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>LABDANUM OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="67ZYA5T02K" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>FRANKINCENSE OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="X33R8U0062" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>ISOSTEARIC ACID</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="Q9L0O73W7L" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>COCONUT OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="2ZA36H0S2V" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>YELLOW WAX</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="3W1JG795YI" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>SUNFLOWER OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="C9H2L21V7U" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>MEDIUM-CHAIN TRIGLYCERIDES</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="R0ZB2556P8" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>TOCOPHEROL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="ZBP1YXW0H8" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>LAVENDER OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="8YOY78GNNX" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>CANANGA OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="595AO13F11" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>CARROT SEED OIL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="8D9H4QU99H" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>COCO-CAPRYLATE/CAPRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator unit="g" value="22"/>
+                    <denominator unit="g" value="100"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                    <name>ZINC OXIDE</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                        <name>ZINC OXIDE</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <quantity>
+                    <numerator value="85" unit="g"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="70631-241-85" codeSystem="2.16.840.1.113883.6.69"/>
+                    <formCode code="C42794" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TUBE"/>
+                  </containerPackagedProduct>
+                  <subjectOf>
+                    <characteristic>
+                      <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                      <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                    </characteristic>
+                  </subjectOf>
+                  <subjectOf>
+                    <marketingAct>
+                      <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="20180608"/>
+                        <high value="20210723"/>
+                      </effectiveTime>
+                    </marketingAct>
+                  </subjectOf>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <approval>
+                  <code code="C132334" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug Product Manufactured Under Contract"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <marketingAct>
+                  <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20180608"/>
+                    <high value="20210723"/>
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <subjectOf>
+                <characteristic classCode="OBS">
+                  <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                  <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE">
+                    <originalText>OPAQUE LOTION, WHITE TO OFF WHITE</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3c3728-772a-6e28-e053-2991aa0a54cf">
+          <id root="cc1d8965-845b-e89c-e053-2995a90a8a59"/>
+          <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+          <title>
+            <content styleCode="bold">Active Ingredients</content>
+          </title>
+          <text>
+            <paragraph>
+              <renderMultiMedia referencedObject="img_6b3c9b71-1fa2-0bbf-e053-2a91aa0a5788">
+ </renderMultiMedia>Zinc Oxide 22%
+ 
+      
+
+ </paragraph>
+          </text>
+          <effectiveTime value="20180608"/>
+          <component>
+            <observationMedia ID="img_6b3c9b71-1fa2-0bbf-e053-2a91aa0a5788">
+              <text>Facts Panel</text>
+              <value mediaType="image/jpeg" xsi:type="ED">
+                <reference value="SPF 50 Drug Facts Panel.jpg"/>
+              </value>
+            </observationMedia>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3bff78-68a2-1c02-e053-2991aa0af4a0">
+          <id root="cc1d8965-845c-e89c-e053-2995a90a8a59"/>
+          <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+          <title>
+            <content styleCode="bold">Purpose</content>
+          </title>
+          <text>
+            <paragraph>Sunscreen</paragraph>
+          </text>
+          <effectiveTime value="20180608"/>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3c347c-eb20-6e2a-e053-2991aa0a481a">
+          <id root="cc1d8965-845d-e89c-e053-2995a90a8a59"/>
+          <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+          <title>
+            <content styleCode="bold">Uses</content>
+          </title>
+          <text>
+            <paragraph>Helps prevent sunburn. If used as directed with other sun protection measures (see 
+  
+       
+ 
+  <content styleCode="italics">
+                <content styleCode="bold">Directions</content>
+              </content>), decreases the risk of skin cancer and early skin aging caused by the sun.
+ 
+      
+
+ </paragraph>
+          </text>
+          <effectiveTime value="20180608"/>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3c347c-eb26-6e2a-e053-2991aa0a481a">
+          <id root="cc1d8965-845e-e89c-e053-2995a90a8a59"/>
+          <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+          <title>
+            <content styleCode="bold">Warnings: For external use only.</content>
+          </title>
+          <effectiveTime value="20180608"/>
+          <component>
+            <section ID="id_link_6b3c347c-eb29-6e2a-e053-2991aa0a481a">
+              <id root="cc1d8965-845f-e89c-e053-2995a90a8a59"/>
+              <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+              <title>
+                <content styleCode="bold">Do not use:</content>
+              </title>
+              <text>
+                <paragraph>On damaged or broken skin.</paragraph>
+              </text>
+              <effectiveTime value="20180608"/>
+            </section>
+          </component>
+          <component>
+            <section ID="id_link_6b3c54f5-0503-203d-e053-2991aa0a361a">
+              <id root="cc1d8965-8460-e89c-e053-2995a90a8a59"/>
+              <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+              <title>
+                <content styleCode="bold">When using this product:</content>
+              </title>
+              <text>
+                <paragraph>Keep out of eyes.  Rinse with water to remove.</paragraph>
+              </text>
+              <effectiveTime value="20180608"/>
+            </section>
+          </component>
+          <component>
+            <section ID="id_link_6b3c347c-eb2f-6e2a-e053-2991aa0a481a">
+              <id root="cc1d8965-8461-e89c-e053-2995a90a8a59"/>
+              <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+              <title>
+                <content styleCode="bold">Stop use and ask a doctor if:</content>
+              </title>
+              <text>
+                <paragraph>rash occurs.</paragraph>
+              </text>
+              <effectiveTime value="20180608"/>
+            </section>
+          </component>
+          <component>
+            <section ID="id_link_6b3c511c-7b07-203f-e053-2991aa0a6e01">
+              <id root="cc1d8965-8462-e89c-e053-2995a90a8a59"/>
+              <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+              <title>
+                <content styleCode="bold">Keep out of reach of childen:</content>
+              </title>
+              <text>
+                <paragraph>If product is swallowed, get medical help or contact a Poison Control Center right away.</paragraph>
+              </text>
+              <effectiveTime value="20180608"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3c54f5-0508-203d-e053-2991aa0a361a">
+          <id root="cc1d8965-8463-e89c-e053-2995a90a8a59"/>
+          <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+          <title>
+            <content styleCode="bold">Directions:</content>
+          </title>
+          <text>
+            <paragraph>apply liberally 15 minutes before sun exposure. 
+  
+       
+ 
+  <content styleCode="bold">Reapply</content>: after 80 minutes of swimming or sweating. Immediately after towel drying. At least every 2 hours. Children under 6 months: Ask a doctor.
+ 
+      
+
+ </paragraph>
+          </text>
+          <effectiveTime value="20180608"/>
+          <component>
+            <section ID="id_link_6b3c9ebf-0299-a68e-e053-2991aa0a52ee">
+              <id root="cc1d8965-8464-e89c-e053-2995a90a8a59"/>
+              <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+              <title>
+                <content styleCode="bold">Sun Protection Measures:</content>
+              </title>
+              <text>
+                <paragraph>Spending time in the sun increases your risk of skin cancer and early skin aging. To decrease this risk, regularly use a sunscreen with a broad spectrum SPF of 15 or higher and other sun protection measures. 
+  
+         
+ 
+  <content styleCode="bold">Including:</content>  Limit time in the sun, especially from 10 a.m. - 2 p.m.  Wear long-sleeve shirts, pants, hats, and sunglasses.
+ 
+        
+
+ </paragraph>
+              </text>
+              <effectiveTime value="20180608"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3c9b71-1f9e-0bbf-e053-2a91aa0a5788">
+          <id root="cc1d8965-8465-e89c-e053-2995a90a8a59"/>
+          <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+          <title>
+            <content styleCode="bold">Other Information:</content>
+          </title>
+          <text>
+            <paragraph>Protect this product from excessive heat and direct sun.</paragraph>
+          </text>
+          <effectiveTime value="20180608"/>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3c92f9-1354-88b6-e053-2991aa0aa136">
+          <id root="cc1d8965-8466-e89c-e053-2995a90a8a59"/>
+          <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+          <title>
+            <content styleCode="bold">Inactive Ingredients:</content>
+          </title>
+          <text>
+            <paragraph>Medium-chain triglycerides</paragraph>
+            <paragraph>Yellow wax</paragraph>
+            <paragraph>Castor oil</paragraph>
+            <paragraph>Coco-caprylate/caprate</paragraph>
+            <paragraph>Coconut oil</paragraph>
+            <paragraph>Tocopherol</paragraph>
+            <paragraph>Polyglyceryl-3 ricinoleate</paragraph>
+            <paragraph>Sunflower oil</paragraph>
+            <paragraph>Isostearic acid</paragraph>
+            <paragraph>Helichrysum italicum flower oil</paragraph>
+            <paragraph>Lavender oil</paragraph>
+            <paragraph>Myrrh oil</paragraph>
+            <paragraph>Labdanum oil</paragraph>
+            <paragraph>Cananga oil</paragraph>
+            <paragraph>Carrot seed oil</paragraph>
+            <paragraph>Frankincense oil</paragraph>
+          </text>
+          <effectiveTime value="20180608"/>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_6b3c92f9-1356-88b6-e053-2991aa0aa136">
+          <id root="cc1dc7a1-f10b-22a4-e053-2995a90a8405"/>
+          <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+          <title>70631-137-85</title>
+          <text>
+            <paragraph>
+              <renderMultiMedia referencedObject="img_cc1dc1e3-8023-c008-e053-2995a90a0c50"/>
+              <renderMultiMedia referencedObject="img_cc1dc1e3-8024-c008-e053-2995a90a0c50"/>
+            </paragraph>
+          </text>
+          <effectiveTime value="20180608"/>
+          <component>
+            <observationMedia ID="img_cc1dc1e3-8023-c008-e053-2995a90a0c50">
+              <text>1</text>
+              <value mediaType="image/jpeg" xsi:type="ED">
+                <reference value="Front pannel.jpg"/>
+              </value>
+            </observationMedia>
+          </component>
+          <component>
+            <observationMedia ID="img_cc1dc1e3-8024-c008-e053-2995a90a0c50">
+              <text>2</text>
+              <value mediaType="image/jpeg" xsi:type="ED">
+                <reference value="Back pannel.jpg"/>
+              </value>
+            </observationMedia>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="id_link_c7cda7a8-f4ef-c80e-e053-2a95a90a94e0">
+          <id root="cc1dc1e3-8026-c008-e053-2995a90a0c50"/>
+          <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+          <title>
+            <content styleCode="bold">Principal Display
+  <br/>
+70631-241-85
+ </content>
+          </title>
+          <text>
+            <paragraph>
+              <renderMultiMedia referencedObject="img_cc1dc7a1-f10c-22a4-e053-2995a90a8405"/>
+              <renderMultiMedia referencedObject="img_cc1dab0b-b156-9488-e053-2a95a90a8498"/>
+            </paragraph>
+            <paragraph/>
+            <paragraph/>
+            <paragraph/>
+          </text>
+          <effectiveTime value="20210723"/>
+          <component>
+            <observationMedia ID="img_cc1dc7a1-f10c-22a4-e053-2995a90a8405">
+              <text>3</text>
+              <value mediaType="image/jpeg" xsi:type="ED">
+                <reference value="Front pannel.jpg"/>
+              </value>
+            </observationMedia>
+          </component>
+          <component>
+            <observationMedia ID="img_cc1dab0b-b156-9488-e053-2a95a90a8498">
+              <text>1</text>
+              <value mediaType="image/jpeg" xsi:type="ED">
+                <reference value="SPF 50 Drug Facts Panel.jpg"/>
+              </value>
+            </observationMedia>
+          </component>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</document>

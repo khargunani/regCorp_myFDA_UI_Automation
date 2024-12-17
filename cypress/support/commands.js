@@ -29,6 +29,8 @@ import Login from "../pages/LoginPage/LoginPage";
 import 'cypress-file-upload';
 
 
+
+
 Cypress.Commands.add('getText', (element) => {
     return cy.get(element)
       // will invoke .text() and return it
@@ -118,7 +120,8 @@ Cypress.Commands.add('login', (UserName, UserPassword) => {
 //         .should('be.visible')
 //         .then(cy.wrap);
 // })
-  
+
+
 
 
 

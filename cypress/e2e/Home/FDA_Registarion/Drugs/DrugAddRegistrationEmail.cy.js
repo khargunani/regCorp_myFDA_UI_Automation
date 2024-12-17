@@ -35,23 +35,7 @@ describe('Validate add drug registration process on myFDA', () => {
                 cy.logger('Drug', "Added payment details");
                 drugObj.confirmation(registrationData.confirmation);
                 cy.logger('Drug', "Validated confirmation message after adding all details");
-
-                //Visit CD application
-                cy.visit('https://dev.contactdirect.com/cdlogin.jsp', { failOnStatusCode: false });
-                cy.logger('applicationCD', "CD Launched Application-->Login Test");
-                cy.fixture('./ContactDirect/Login/LoginPage').then((data) => {
-                    cy.logger('CDLogin', 'Logging to CD using valid credentials')
-                    const { username, password } = data;
-                    cy.LoginCD(username, password);
-                    cy.wait(10000);
-                })
-                cy.logger('application', "Validated success Login Msg-->Login Test");
-                const homepage = new HomePage();
-                homepage.goForCompany();
-                cy.logger('CD application', 'Search for NewTest company');
-                drugObj.verifyRecordInCD(registrationData.establishmentPhysicalAddress, registrationData.mailingAddress
-                    , registrationData.ownerOperator
-                );
+                drugObj.verifyAddEmail();
                 cy.logger('CD application', 'Verify drug registration edites records on CD app');
                 const loadTime = Date.now() - startTime;
                 cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);

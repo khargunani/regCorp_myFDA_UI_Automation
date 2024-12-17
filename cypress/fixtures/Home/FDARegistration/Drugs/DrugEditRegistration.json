@@ -1,40 +1,40 @@
 {
     "establishmentPhysicalAddress": {
-        "companyName" : "JohnTest",
-        "feiNumber" : "20",
-        "addressLine1" : "Flat no: 852, SA High Hill Pune",
-        "addressLine2" : "Flat no: 851, SA High Hill Pune",
-        "city" : "Mumbai",
-        "state" : "MH",
-        "postalCode" : "20011",
-        "dunsNumber" : "20",
+        "companyName": "JohnTest",
+        "feiNumber": "20",
+        "addressLine1": "Flat no: 852, SA High Hill Pune",
+        "addressLine2": "Flat no: 851, SA High Hill Pune",
+        "city": "Mumbai",
+        "state": "MH",
+        "postalCode": "20011",
+        "dunsNumber": "20",
         "country": "India"
     },
     "mailingAddress": {
-        "companyName" : "JohnTest1",
-        "feiNumber" : "102",
-        "addressLine1" : "Flat no: 10, SA High Hill Pune",
-        "addressLine2" : "Flat no: 20, SA High Hill Pune",
-        "city" : "Pune",
-        "state" : "MH",
-        "postalCode" : "20013",
-        "dunsNumber" : "130",
+        "companyName": "JohnTest2",
+        "feiNumber": "102",
+        "addressLine1": "Flat no: 10, SA High Hill Pune",
+        "addressLine2": "Flat no: 20, SA High Hill Pune",
+        "city": "Pune",
+        "state": "MH",
+        "postalCode": "20013",
+        "dunsNumber": "130",
         "country": "India"
     },
     "ownerOperator": {
-        "contactPerson" : "John",
-        "contactPhone" : "9565352515",
-        "contactEmail" : "johnTest@gmail.com"
+        "contactPerson": "John",
+        "contactPhone": "9565352515",
+        "contactEmail": "johnTest@gmail.com"
     },
     "importers": {
-        "companyName" : "Xyz",
-        "phone" : "6655223344",
-        "email" : "xyz@gmail.com",
-        "duns" : "123546782"
+        "companyName": "Xyz",
+        "phone": "6655223344",
+        "email": "xyz@gmail.com",
+        "duns": "123546782"
     },
     "payment": {
-        "name" : "Xys",
-        "title" : "QA",
-        "email" : "xyz@gmail.com"
+        "name": "Xys",
+        "title": "QA",
+        "email": "xyz@gmail.com"
     }
 }

@@ -15,6 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mailslurp';
+//import "cypress-mailslurp";
 import 'cypress-mochawesome-reporter/register';
 require('cypress-xpath')
 
@@ -26,3 +28,7 @@ Cypress.on('test:after:run', (test, runnable) => {
     const video = `assets/videos/${Cypress.spec.name}.mp4`;
     addContext({ test }, video);
   });
+
+
+
+
