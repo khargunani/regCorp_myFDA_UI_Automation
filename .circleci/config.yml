@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Zip  Report
           command: |
-              node ./scripts/zipScript.js
+              node scripts/zipScript.js
               ls -l cypress/reports/mochawesome-report      
       - store_artifacts:
           path: cypress/reports/mochawesome-report/report.zip  
