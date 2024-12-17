@@ -1,25 +1,10 @@
 version: 2.1
-executors:
-  # Define a custom executor that includes the Cypress image and the OpenJDK service container
-  cypress-executor:
-    docker:
-      - image: cypress/browsers:latest  # Primary container with Cypress and browsers
-jobs:
-     - cypress/run:
+orbs:
+  cypress: cypress-io/cypress@3
+workflows:
+  test:
+    jobs:
+      - cypress/run:
           install-browsers: true
           start-command: 'npm run start'
           cypress-command: 'npx cypress run --browser chrome'
-      # Additional commands to zip reports, etc.
-      - run:
-          name: Zip  Report
-          command: |
-              node scripts/zipScript.js
-              ls -l cypress/reports/mochawesome-report      
-      - store_artifacts:
-          path: cypress/reports/mochawesome-report/report.zip  
-          destination: TestReport        
-workflows:
-  version: 2
-  report:
-    jobs:
-      - build
