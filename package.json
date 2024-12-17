@@ -18,6 +18,7 @@
     "cypress-xpath": "^2.0.1"
   },
   "dependencies": {
+    "adm-zip": "^0.5.16",
     "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.15.0",
     "dayjs": "^1.11.13",
