@@ -7,4 +7,4 @@ workflows:
       - cypress/run:
           install-browsers: true
           start-command: 'npm run start'
-          cypress-command: 'npx cypress run --browser chrome'
+          cypress-command: 'cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js --browser chrome'
