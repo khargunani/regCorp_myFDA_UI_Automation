@@ -5,15 +5,10 @@ executors:
     docker:
       - image: cypress/browsers:latest  # Primary container with Cypress and browsers
 jobs:
-  build:
-    executor: cypress-executor
-    steps:
-      - checkout  # Checkout the repository code    
-      - run:
-          name: Run Cypress Tests
-          command: |
-              npm install --legacy-peer-deps  # Install dependencies if needed           
-              npx cypress run || true     
+     - cypress/run:
+          install-browsers: true
+          start-command: 'npm run start'
+          cypress-command: 'npx cypress run --browser chrome'
       # Additional commands to zip reports, etc.
       - run:
           name: Zip  Report
