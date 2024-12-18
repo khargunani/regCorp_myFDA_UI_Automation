@@ -10,9 +10,7 @@ jobs:
     steps:
       - checkout  # Checkout the repository code    
       - run:
-          name: Run Cypress Tests
-          command: |         
-              npx cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js    
+          command: npx cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js    
       # Additional commands to zip reports, etc.
       - run:
           name: Zip  Report
