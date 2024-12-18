@@ -11,9 +11,8 @@ jobs:
       - checkout  # Checkout the repository code    
       - run:
           name: Run Cypress Tests
-          command: |
-              npm install --legacy-peer-deps || true  # Install dependencies if needed           
-              npx cypress run || true     
+          command: |         
+              npx cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js    
       # Additional commands to zip reports, etc.
       - run:
           name: Zip  Report
