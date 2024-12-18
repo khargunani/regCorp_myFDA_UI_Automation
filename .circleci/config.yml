@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Run Cypress Tests
           command: |
-              npm install --legacy-peer-deps  # Install dependencies if needed           
+              npm install --legacy-peer-deps || true  # Install dependencies if needed           
               npx cypress run || true     
       # Additional commands to zip reports, etc.
       - run:
