@@ -9,7 +9,7 @@ jobs:
     executor: cypress-executor
     steps:
     
-     - cypress/run:
+     -run:
       requires:
         - cypress/install
       start: 'lerna run start --parallel'
