@@ -12,8 +12,7 @@ jobs:
      -run:
       requires:
         - cypress/install
-      start: 'lerna run start --parallel'
-      install-command: 'npm install --no-optional --unsafe-perm'
+          command: 'npm install --no-optional --unsafe-perm'
       - checkout  # Checkout the repository code    
       - run:
           command: npm cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js    
