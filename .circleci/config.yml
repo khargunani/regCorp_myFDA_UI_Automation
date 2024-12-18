@@ -9,11 +9,10 @@ jobs:
     executor: cypress-executor
     steps:
     
-     -run:
-      requires:
-        - cypress/install
-          command: npm install --no-optional --unsafe-perm
-      - checkout  # Checkout the repository code    
+      - run:
+          command: npm install   
+      # Additional commands to zip reports, etc.
+    
       - run:
           command: npm cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js    
       # Additional commands to zip reports, etc.
