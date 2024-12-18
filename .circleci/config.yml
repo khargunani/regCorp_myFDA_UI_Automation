@@ -8,9 +8,15 @@ jobs:
   build:
     executor: cypress-executor
     steps:
+    
+     - cypress/run:
+      requires:
+        - cypress/install
+      start: 'lerna run start --parallel'
+      install-command: 'npm install --no-optional --unsafe-perm'
       - checkout  # Checkout the repository code    
       - run:
-          command: npx cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js    
+          command: npm cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js    
       # Additional commands to zip reports, etc.
       - run:
           name: Zip  Report
