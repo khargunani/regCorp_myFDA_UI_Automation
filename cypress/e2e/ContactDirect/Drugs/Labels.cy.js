@@ -7,7 +7,7 @@ const labelsObj = new Labels();
 describe('Validate Labels functionality', () => {
 
     beforeEach(() => {
-        cy.visit('https://dev.contactdirect.com/cdlogin.jsp', { failOnStatusCode: false });
+        cy.visit('https://testweb.myfda.com:8743/cdlogin.jsp', { failOnStatusCode: false });
         cy.logger('applicationCD', "CD Launched Application-->Login Test");
         cy.fixture('./ContactDirect/Login/LoginPage').then((data) => {
             cy.logger('CDLogin', 'Logging to CD using valid credentials')
