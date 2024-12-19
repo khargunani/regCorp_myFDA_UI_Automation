@@ -103,7 +103,7 @@ Cypress.Commands.add('DeleteSubUser', (subUser) => {
 Cypress.Commands.add('login', (UserName, UserPassword) => {
     cy.get("input[placeholder='User ID']").type(UserName);
     cy.get("#password-field").type(UserPassword);
-    //cy.get("input[name='captchaTxt']").type("anyText"); 
+   // cy.get("input[name='captchaTxt']").type("anyText"); 
     cy.wait(10000);
     cy.get(":nth-child(12) > .uk-width-1-1").click();
     cy.url().should('include', '/login');

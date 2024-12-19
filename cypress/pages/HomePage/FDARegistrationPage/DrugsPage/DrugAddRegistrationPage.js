@@ -306,7 +306,7 @@ class DrugAddRegistration {
         cy.then(()=>{
             cy.wrap(mailslurp).as('mailslurp')
           cy.then(function () {
-            return this.mailslurp.waitForLatestEmail('c0366438-78ea-4b9e-836e-6f188dc4dfef',120_000,true);
+            return this.mailslurp.waitForLatestEmail('923afa32-ee38-4279-b97c-170f4ea93cdd',120_000,true);
           }).then(email =>{
             expect(email.body).to.contain("Your online request was successfully submitted. Registrar Corp's Regulatory Specialists will update your registration and notify you via email once completed.")
           })
