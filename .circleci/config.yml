@@ -5,6 +5,6 @@ workflows:
   use-my-orb:
     jobs:
       - cypress/run:
-          cypress-command: npx cypress run --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js
+          cypress-command: npx cypress run --browser chrome --headed --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js 
           install-browsers: true
           
