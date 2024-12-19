@@ -66,7 +66,7 @@ describe('Validate Listing SPLs functionality', () => {
         cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
     })
 
-    it.only('Verify user can edit information in GDUFA tab in CD', () => {
+    it('Verify user can edit information in GDUFA tab in CD', () => {
         listingObj.verifyEditGDUFA();
         const loadTime = Date.now() - startTime;
         cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);

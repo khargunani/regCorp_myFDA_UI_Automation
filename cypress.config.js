@@ -15,9 +15,9 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   video: true,
   env: {
-    "myFDAurl": 'https://testweb.myfda.com:5643/login/',
+    "myFDAurl": 'https://testweb.myfda.com:5483/login/',
     "CDurl": 'https://testweb.myfda.com:8743/cdlogin.jsp',
-     "myFDA": 'https://testweb.myfda.com:5643/signin',
+     "myFDA": 'https://testweb.myfda.com:5483/signin',
       "MAILSLURP_API_KEY": 'e2e6bb046c80034e16b4740a7cdd4fd3f57eb2d3cb2c764f3df5579f357c1203'
   
 },

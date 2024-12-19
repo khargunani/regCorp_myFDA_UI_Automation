@@ -8,7 +8,7 @@ workflows:
           cypress-command: npx cypress run --browser chrome --headed --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js 
           install-browsers: true
           
-      - run:
+      - cypress/run:
           name: Zip  Report
           command: |
               node ./scripts/zipScript.js
