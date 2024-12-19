@@ -8,4 +8,12 @@ workflows:
           cypress-command: npx cypress run --browser chrome --headed --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js 
           install-browsers: true
           
-          
+      - run:
+          name: Zip  Report
+          command: |
+              node ./scripts/zipScript.js
+              ls -l cypress/reports/mochawesome-report 
+              
+      - store_artifacts:
+          path: cypress/reports/mochawesome-report/report.zip  
+          destination: TestReport
