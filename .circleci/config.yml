@@ -7,3 +7,7 @@ workflows:
       - cypress/run:
           cypress-command: npx cypress run --browser chrome --headed --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js 
           install-browsers: true
+          post-steps:
+              - run: ls
+              - store_artifacts:
+                  path: cypress/reports/mochawesome-report 
