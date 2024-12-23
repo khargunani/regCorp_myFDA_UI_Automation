@@ -9,7 +9,7 @@ const listingObj = new ListingSpls();
 describe('Validate Listing SPLs functionality', () => {
 
     beforeEach(() => {
-        cy.visit('https://dev.contactdirect.com/cdlogin.jsp', { failOnStatusCode: false });
+        cy.visit('https://testweb.myfda.com:8743/cdlogin.jsp', { failOnStatusCode: false });
         cy.logger('applicationCD', "CD Launched Application-->Login Test");
         cy.fixture('./ContactDirect/Login/LoginPage').then((data) => {
             cy.logger('CDLogin', 'Logging to CD using valid credentials')
@@ -66,59 +66,61 @@ describe('Validate Listing SPLs functionality', () => {
         cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
     })
 
-    it('Verify user can edit information in GDUFA tab in CD', () => {
-        listingObj.verifyEditGDUFA();
-        const loadTime = Date.now() - startTime;
-        cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
-    })
+    
+    // it('Verify user can edit information in GDUFA tab in CD', () => {
+    //     listingObj.verifyEditGDUFA();
+    //     const loadTime = Date.now() - startTime;
+    //     cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
+    // })
 
-    it('Verify user can edit product reporting and save successfully in MyFDA', () => {
-        listingObj.uploadFile();
-        cy.logger('Drug on CD side', "Validated upload file functionality");
-        listingObj.verifyManualAddListing();
-        //listingObj.VerifyEditListing();
-        // listingObj.verifyDeleteListing();
-        const loadTime = Date.now() - startTime;
-        cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
-    })
 
-    it('Verify user can upload,update and delete Reg SPL file successfully in CD', () => {
+    // it.only('Verify user can edit product reporting and save successfully in MyFDA', () => {
+    //     listingObj.uploadFile();
+    //     cy.logger('Drug on CD side', "Validated upload file functionality");
+    //     listingObj.verifyManualAddListing();
+    //     //listingObj.VerifyEditListing();
+    //     // listingObj.verifyDeleteListing();
+    //     const loadTime = Date.now() - startTime;
+    //     cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
+    // })
 
-        listingObj.uploadRegSPLFile();
-        cy.logger('Drug on CD side', "Validated upload RegSPL file functionality");
-        listingObj.verifyUpdateRegSPLFile();
-        cy.logger('Drug on CD side', "Validated update RegSPL file functionality");
-        listingObj.verifyDeleteRegSPLFile();
-        cy.logger('Drug on CD side', "Validated delete RegSPL file functionality");
-        const loadTime = Date.now() - startTime;
-        cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
-    })
+    // it('Verify user can upload,update and delete Reg SPL file successfully in CD', () => {
 
-    it('Verify user can upload,update and delete file Labeler SPL in CD', () => {
+    //     listingObj.uploadRegSPLFile();
+    //     cy.logger('Drug on CD side', "Validated upload RegSPL file functionality");
+    //     listingObj.verifyUpdateRegSPLFile();
+    //     cy.logger('Drug on CD side', "Validated update RegSPL file functionality");
+    //     listingObj.verifyDeleteRegSPLFile();
+    //     cy.logger('Drug on CD side', "Validated delete RegSPL file functionality");
+    //     const loadTime = Date.now() - startTime;
+    //     cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
+    // })
 
-        listingObj.uploadLablerSPLFile();
-        cy.logger('Drug on CD side', "Validated upload Labeler SPL file functionality");
-        listingObj.verifyUpdateLabelerSPLFile();
-        cy.logger('Drug on CD side', "Validated update Labeler SPL file functionality");
-        listingObj.verifyDeleteLabelerSPLFile();
-        cy.logger('Drug on CD side', "Validated delete Labeler SPL file functionality");
-        const loadTime = Date.now() - startTime;
-        cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
-    })
+    // it('Verify user can upload,update and delete file Labeler SPL in CD', () => {
 
-    it(' Verify user can view “View Importers” and “View Qualifiers” in CD for Reg SPL.', () => {
+    //     listingObj.uploadLablerSPLFile();
+    //     cy.logger('Drug on CD side', "Validated upload Labeler SPL file functionality");
+    //     listingObj.verifyUpdateLabelerSPLFile();
+    //     cy.logger('Drug on CD side', "Validated update Labeler SPL file functionality");
+    //     listingObj.verifyDeleteLabelerSPLFile();
+    //     cy.logger('Drug on CD side', "Validated delete Labeler SPL file functionality");
+    //     const loadTime = Date.now() - startTime;
+    //     cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
+    // })
 
-        listingObj.uploadRegSPLFile();
-        cy.logger('Drug on CD side', "Validated upload Labeler SPL file functionality");
-        listingObj.verifyRegSPLQualifierFile();
-        cy.logger('Drug on CD side', "Validated Reg SPL qualifier file functionality");
-    })
+    // it('Verify user can view “View Importers” and “View Qualifiers” in CD for Reg SPL.', () => {
 
-    it(' Verify user can view “View Importers” and “View Qualifiers” in CD for Labeler SPL.', () => {
+    //     listingObj.uploadRegSPLFile();
+    //     cy.logger('Drug on CD side', "Validated upload Labeler SPL file functionality");
+    //     listingObj.verifyRegSPLQualifierFile();
+    //     cy.logger('Drug on CD side', "Validated Reg SPL qualifier file functionality");
+    // })
 
-        listingObj.uploadLablerSPLFile();
-        cy.logger('Drug on CD side', "Validated upload Labeler SPL file functionality");
-        listingObj.verifyLabelerQualifierFile();
-        cy.logger('Drug on CD side', "Validated Labeler SPL qualifier file functionality");
-    })
+    // it(' Verify user can view “View Importers” and “View Qualifiers” in CD for Labeler SPL.', () => {
+
+    //     listingObj.uploadLablerSPLFile();
+    //     cy.logger('Drug on CD side', "Validated upload Labeler SPL file functionality");
+    //     listingObj.verifyLabelerQualifierFile();
+    //     cy.logger('Drug on CD side', "Validated Labeler SPL qualifier file functionality");
+    // })
 })

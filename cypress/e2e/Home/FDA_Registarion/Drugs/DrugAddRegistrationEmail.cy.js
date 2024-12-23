@@ -5,7 +5,7 @@ const drugObj = new DrugAddRegistration();
 describe('Validate add drug registration process on myFDA', () => {
 
     beforeEach(() => {
-        cy.visit(Cypress.env('myFDAurl'));
+        cy.visit(Cypress.env('myFDA'));
         cy.logger('application', "Launched Application-->Login Test");
         cy.wait(1000);
         cy.logger('application', "Validated success Login Msg-->Login Test");

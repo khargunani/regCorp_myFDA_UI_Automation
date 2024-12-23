@@ -10,7 +10,7 @@ const GeneralInformation = {
     SubmitChangeButton: `div[class='uk-grid'] div [id="button-save"]`,
     ReturnChangeButton: `div[class='uk-grid'] div div a[class='uk-button']`,
     CustomMessage: `textarea[name='custom_message']`,
-    FEINumber: `span[title='Registration is Valid / Registrar Corp is US Agent']`
+    FEINumber: `#drugFeiTD`
 }
 
 const CompanyFunctions = {
@@ -107,7 +107,7 @@ class DrugEstablishment {
     submit() {
         const generalInfo = this.generateRandomGeneralInformation();
         cy.get(GeneralInformation.SubmitChangeButton).click();
-        cy.url().should('eq', 'company=2731047&country=IN');
+        cy.url().should('eq', 'https://testweb.myfda.com:8743/fda/intranet/otc/OtcInfo');
         cy.get(GeneralInformation.FEINumber).should('contain.text',generalInfo.feiNumber);
     }
 

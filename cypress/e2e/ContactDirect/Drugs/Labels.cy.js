@@ -31,20 +31,20 @@ describe('Validate Labels functionality', () => {
         cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
     })
 
-    // it('Verify updated labels are viewable to the user in MyFDA', () => {
-    //     labelsObj.uploadManualLabels();
-    //     cy.logger('CD application', 'Verified upload manual labels functionality');
-    //     cy.visit(Cypress.env('myFDA'));
-    //     cy.logger('application', "Launched Application-->Login Test");
-    //     cy.wait(1000);
-    //     cy.fixture('./Login/LoginPage').then((data) => {
-    //         const { UserName, UserPassword } = data.validUser;
-    //         cy.login(UserName, UserPassword);
-    //     })
-    //     cy.logger('application', "Validated success Login Msg-->Login Test");
-    //     labelsObj.labelsViewable();
-    //     cy.logger('My FDA', "Verified updated labels are viewable in MyFDA");
-    //     const loadTime = Date.now() - startTime;
-    //     cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
-    // })
+    it('Verify updated labels are viewable to the user in MyFDA', () => {
+        labelsObj.uploadManualLabels();
+        cy.logger('CD application', 'Verified upload manual labels functionality');
+        cy.visit(Cypress.env('myFDA'));
+        cy.logger('application', "Launched Application-->Login Test");
+        cy.wait(1000);
+        cy.fixture('./Login/LoginPage').then((data) => {
+            const { UserName, UserPassword } = data.validUser;
+            cy.login(UserName, UserPassword);
+        })
+        cy.logger('application', "Validated success Login Msg-->Login Test");
+        labelsObj.labelsViewableInMyFDA();
+        cy.logger('My FDA', "Verified updated labels are viewable in MyFDA");
+        const loadTime = Date.now() - startTime;
+        cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
+    })
 })

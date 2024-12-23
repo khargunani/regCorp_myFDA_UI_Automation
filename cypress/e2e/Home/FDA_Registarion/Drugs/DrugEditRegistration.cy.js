@@ -40,7 +40,7 @@ describe('Validate edit drug registration process on myFDA', () => {
                 cy.logger('MyFDA', "Validated signout functionality");
 
                 //Visit CD application
-                cy.visit('https://dev.contactdirect.com/cdlogin.jsp', { failOnStatusCode: false });
+                cy.visit('https://testweb.myfda.com:8743/cdlogin.jsp', { failOnStatusCode: false });
                 cy.logger('applicationCD', "CD Launched Application-->Login Test");
                 cy.fixture('./ContactDirect/Login/LoginPage').then((data) => {
                     cy.logger('CDLogin', 'Logging to CD using valid credentials')

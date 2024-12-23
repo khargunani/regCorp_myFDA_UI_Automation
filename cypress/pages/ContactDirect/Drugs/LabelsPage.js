@@ -128,7 +128,7 @@ class Labels {
     cy.get(Label.SubmitButton).should('be.visible').click();
   }
 
-  labelsViewable() {
+  labelsViewableInMyFDA() {
     cy.get(LabelFda.FdaIcon).should('be.visible').and('have.text', Texts.fdaRegistartionText).click();
     cy.contains(Texts.drugText).should('be.visible').click();
     cy.get(LabelFda.NextButton).should('be.visible').click();
@@ -142,8 +142,20 @@ class Labels {
       });
     cy.wait(1000);
     cy.get(`a.uk-margin-right`).should('be.visible').invoke('removeAttr', 'target').click();
+    cy.wait(1000);
+    cy.readFile('cypress/downloads/2731047_70631-137-85_1.jpg', 'base64')
+      .then((downloadedImageBase64) => {
+        cy.wrap(downloadedImageBase64).as('downloadedImageBase64');
+      });
+    cy.fixture('ContactDirect/Drugs/Drug.jpg', 'base64').then((uploadedImageBase64) => {
+      cy.wrap(uploadedImageBase64).as('uploadedImageBase64');
+    });
+    cy.get('@uploadedImageBase64').then((uploadedImage) => {
+      cy.get('@downloadedImageBase64').then((downloadedImage) => {
+        expect(uploadedImage).to.equal(downloadedImage);
+      });
+    });
   }
-
 }
 
 export default Labels;
