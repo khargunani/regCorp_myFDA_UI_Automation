@@ -31,6 +31,7 @@ import 'cypress-file-upload';
 
 
 
+
 Cypress.Commands.add('getText', (element) => {
     return cy.get(element)
       // will invoke .text() and return it
@@ -65,20 +66,20 @@ Cypress.Commands.add('logger', (filename, message) => {
     })                                                                                         // { cacheAcrossSpecs: true }
 });
 
+// Cypress.Commands.add('LoginCD', (username, password) => {
+//     cy.session([username, password], () => {
+//         const loginObj = new CDLogin();
+//         cy.visit(Cypress.env('CDurl'),{failOnStatusCode: false})
+//         loginObj.userLogin(username, password);
+//         cy.wait(2000);
+//        // cy.url().should('contain', '/loginserv');
+//         //loginObj.verifyLoginSuccess();
+//         cy.logger('CDLogin', "Validated success Login Msg-->Login Test");
+//     })                                                                                         // { cacheAcrossSpecs: true }
+// });
 Cypress.Commands.add('LoginCD', (username, password) => {
-    cy.session([username, password], () => {
-        const loginObj = new CDLogin();
-        cy.visit(Cypress.env('CDurl'),{failOnStatusCode: false})
-        loginObj.userLogin(username, password);
-        cy.wait(2000);
-       // cy.url().should('contain', '/loginserv');
-        //loginObj.verifyLoginSuccess();
-        cy.logger('CDLogin', "Validated success Login Msg-->Login Test");
-    })                                                                                         // { cacheAcrossSpecs: true }
-});
-Cypress.Commands.add('LoginCD', (username, password) => {
-    cy.xpath("//input[@name='email']").should('be.visible').type(username);
-    cy.get("input[name='password']").should('be.visible').type(password);
+    cy.xpath("//input[@name='email']").should('be.visible').clear().type(username);
+    cy.get("input[name='password']").should('be.visible').clear().type(password);
     cy.get("a[class='Copy'] b nobr").should('be.visible').click();
     cy.url().should('include', '/loginserv');
 })

@@ -1,0 +1,56 @@
+{
+    "facilityPhysicalAddress": {
+        "companyName": "John Test",
+        "fdaRegistration": "",
+        "facilityNameSuffix": "Company",
+        "tradeName": "test",
+        "physicalAddress": "Flat no: 10, SS High Hill Pune",
+        "phoneNumber": "9988774455",
+        "faxNumber": "25896396",
+        "emailAddress": "btaregistration@mailslurp.biz",
+        "taxId": "1002",
+        "city": "Pune",
+        "country": "INDIA"
+    },
+    "facilityPostalAddress": {
+        "companyName": "John Test007",
+        "nameSuffix": "KT",
+        "postalAddress": "Flat no: 11, SQ High Hill Pune",
+        "phoneNumber": "8696523366",
+        "faxNumber": "25896325",
+        "emailAddress": "btaregistration@mailslurp.biz",
+        "city" : "Mumbai",
+        "country": "INDIA"
+    },
+    "emergencyContact": {
+        "firstName": "Kimmy",
+        "middleName": "Test",
+        "lastName" : "Mass",
+        "jobTitle": "Owner",
+        "phoneNumber": "8696523334",
+        "emailAddress": "johnTest@gmail.com"
+    },
+    "parentCompany": {
+        "companyName": "Green Valley",
+        "companyNameSuffix": "GC",
+        "address": "Flat no: 0152, GC High Hill Pune",
+        "city": "Pune",
+        "country": "INDIA",
+        "phoneNumber": "8696527534",
+        "faxNumber" : "25646325",
+        "emailAddress" : "greenCreamery@gmail.com"
+    },
+    "activityConductedFacility": {
+        "activityType" : "Food for Human consumption",
+        "activityType2" : "Food for Animal consumption"
+    
+    },
+    "agreement": {
+        "name" : "Kimmy Test",
+        "title" : "QA",
+        "email" : "btaregistration@mailslurp.biz"
+    },
+    "email": {
+        "emailAPIKey": "f522af28-e910-40a6-9410-b0e9a2bbbe14"
+    }
+}

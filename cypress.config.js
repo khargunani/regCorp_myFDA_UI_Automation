@@ -8,6 +8,8 @@ const path = require("path");
 const dayjs = require('dayjs')
 
 
+
+
 module.exports = defineConfig({
   chromeWebSecurity: false,
   defaultCommandTimeout: 30000,
@@ -16,7 +18,7 @@ module.exports = defineConfig({
   video: true,
   env: {
     "myFDAurl": 'https://testweb.myfda.com:5643/login/',
-    "CDurl": 'https://testweb.myfda.com:8743/cdlogin.jsp',
+    "CDurl": 'https://dev.contactdirect.com/cdlogin.jsp',
      "myFDA": 'https://testweb.myfda.com:5643/signin',
       "MAILSLURP_API_KEY": 'e2e6bb046c80034e16b4740a7cdd4fd3f57eb2d3cb2c764f3df5579f357c1203'
   
@@ -39,15 +41,12 @@ module.exports = defineConfig({
           readPdf:pdfPath=>{ return readPdf(pdfPath)}
          
         });
+        on('task', {downloadFile});
         return config;
         
       
-    }
-   
-    
+    } 
   }
-  
-   
   
 })
 

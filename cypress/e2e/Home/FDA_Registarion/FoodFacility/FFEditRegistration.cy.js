@@ -1,8 +1,8 @@
-import FFAddRegistration from "../../../../pages/HomePage/FDARegistrationPage/FoodFacility/FFAddRegistrationPage";
+import FFEditRegistration from "../../../../pages/HomePage/FDARegistrationPage/FoodFacility/FFEditRegistrationPage";
 import HomePage from "../../../../pages/ContactDirect/Home/Home/SearchCompanyPage";
 const startTime = Date.now();
-const FFobj = new FFAddRegistration
-describe('Validate add food facility registration process on myFDA', () => {
+const FFobj = new FFEditRegistration
+describe('Validate edit food facility registration process on myFDA', () => {
 
     beforeEach(() => {
         cy.visit(Cypress.env('myFDA'));
@@ -11,12 +11,12 @@ describe('Validate add food facility registration process on myFDA', () => {
         cy.logger('application', "Validated success Login Msg-->Login Test");
     });
 
-    it('Verify that user can add registration data on myFDA and gets reflected on CD side', () => {
+    it('Verify that user can edit registration data on myFDA and gets reflected on CD side', () => {
         cy.fixture('ContactDirect/MyFDA/UserCreation').then((data) => {
             const { desiredUserId, password } = data.subUser;
             cy.login(desiredUserId, password);
-            FFobj.verifyFFAddRegistration();
-            cy.fixture('Home/FDARegistration/FoodFacility/FFAddRegistration.json').then((registrationData) => {
+            FFobj.verifyFFEditRegistration();
+            cy.fixture('Home/FDARegistration/FoodFacility/FFEditRegistration.json').then((registrationData) => {
                 console.log(registrationData);
                 FFobj.facilityPhysicalAddress(registrationData.facilityPhysicalAddress);
                 cy.logger('Food facility', "Added establishment physical address details");
@@ -44,14 +44,14 @@ describe('Validate add food facility registration process on myFDA', () => {
                 })
                 cy.logger('application', "Validated success Login Msg-->Login Test");
                 const homepage = new HomePage();
-                homepage.goForCompany();
+                homepage.goForCompany;
                 cy.logger('CD application', 'Search for NewTest company');
                 FFobj.verifyRecordInCD(registrationData.facilityPhysicalAddress, registrationData.facilityPostalAddress
                     , registrationData.emergencyContact, registrationData.parentCompany, registrationData.agreement
                 );
                 cy.logger('CD application', 'Verify drug registration edites records on CD app');
                 FFobj.verifyAddEmail(registrationData.email);
-                cy.logger('CD application', 'Verify email header triggered successfully on mailslurp ');
+                cy.logger('CD application', 'Verify email header triggered successfully on mailslurp');
                 const loadTime = Date.now() - startTime;
                 cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
             })
