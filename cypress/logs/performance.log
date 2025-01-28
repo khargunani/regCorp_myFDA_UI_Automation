@@ -331,3 +331,8 @@
 [2025-01-21T06:14:44.986Z] TotalTime taken to SignUpUser: 53093ms
 [2025-01-21T06:56:21.504Z] TotalTime taken to SignUpUser: 36328ms
 [2025-01-21T10:40:50.884Z] TotalTime taken to SignUpUser: 6469ms
+[2025-01-22T11:29:44.725Z] TotalTime taken to LoginUser: 17116ms
+[2025-01-24T05:27:43.002Z] Total time taken to Login and Create Inquiry: 56ms
+[2025-01-24T10:15:40.496Z] Total time taken to Login and Create Inquiry: 46ms
+[2025-01-27T13:32:31.696Z] Total time taken to Login and Create Inquiry: 122ms
+[2025-01-28T08:01:46.584Z] Total time taken to Login and Create Inquiry: 56779ms

@@ -1,6 +1,7 @@
 import HomePage from "../../../../../pages/ContactDirect/Home/Home/SearchCompanyPage";
 import FFPayment from "../../../../../pages/HomePage/FDARegistrationPage/FoodFacility/FFPaymentPage"
 import BTAPayment from "../../../../../pages/ContactDirect/BTA/BTAPaymentPage"
+import CDLogin from "../../../../../pages/ContactDirect/LoginPage/LoginPage"
 const startTime = Date.now();
 const FFobjpay = new FFPayment();
 describe('Validate add drug registration process on myFDA', () => {
@@ -33,20 +34,20 @@ describe('Validate add drug registration process on myFDA', () => {
             //FFobjpay.verifyInvoiceDetailsForBankWire();    
         })
 
-        cy.visit('https://dev.contactdirect.com/cdlogin.jsp', { failOnStatusCode: false });
-        cy.logger('applicationCD', "CD Launched Application-->Login Test");
-        cy.fixture('./ContactDirect/Login/LoginPage').then((data) => {
-            cy.logger('CDLogin', 'Logging to CD using valid credentials')
-            const { username, password } = data;
-            cy.LoginCD(username, password);
-            cy.wait(10000);
+        cy.visit(Cypress.env('CDurl'),{failOnStatusCode: false});
+        cy.logger('CDLogin','Logging to CD using valid credentials');
+        cy.fixture('./ContactDirect/Login/LoginPage').then((login) => {
+         const loginobj = new CDLogin()
+         loginobj.userLogin(login.username, login.password);
+         cy.wait(5000);
+         cy.logger('CDHome', 'Go For test company and verify edited details on cosmetic tickler');
+         loginobj.goForCompany();
+         const BTAobj = new BTAPayment();
+         BTAobj.verifyBTAPaymentIsDone();
+         
+
         })
-        cy.logger('application', "Validated success Login Msg-->Login Test");
-        //homepage = new HomePage();
-        homepage.goForCompany();
-        cy.logger('CD application', 'Search for NewTest company');
-        const BTAobj = new BTAPayment();
-        BTAobj.verifyBTAPaymentIsDone();
+      
         
 })
 

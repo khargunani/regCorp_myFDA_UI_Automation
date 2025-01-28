@@ -109,6 +109,15 @@ Cypress.Commands.add('login', (UserName, UserPassword) => {
     cy.get(":nth-child(12) > .uk-width-1-1").click();
     cy.url().should('include', '/login');
 });
+
+Cypress.Commands.add('MyFDALogOut', () => {
+    cy.get('a[title="Sign Out"]').click();
+});
+
+Cypress.Commands.add('CDSignOut',() => {
+cy.get(`img[name='memberSignOut']`).click();
+})
+
 // Cypress.Commands.add('getIframe', (iframeSelector) => {
 //     cy.get('iframe') // Get the iframe
 //       .its('0.contentDocument') // Access the iframe's contentDocument

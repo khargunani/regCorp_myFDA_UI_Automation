@@ -26,6 +26,8 @@ const Texts = {
 
 let amount;
 let txt;
+const MailSlurp = require('mailslurp-client').default;
+const mailslurp = new MailSlurp({ apiKey: Cypress.env('MAILSLURP_API_KEY') })
 
 class FFPayment {
 
@@ -87,7 +89,6 @@ class FFPayment {
         cy.contains(Texts.StaywithStandard).click();
         cy.get("input[type='radio'][value='2']").check();
         cy.get("td[id='finalTotal']").then(($btn) => {
-
             this.txt = $btn.text()
             this.txt= this.txt.replace('$', ''); 
             cy.log("testing log.........")
@@ -116,25 +117,25 @@ class FFPayment {
 
     }
 
-    fillDetailsForOnlinePayment(){
+    fillDetailsForOnlinePayment(PaymentDetails){
         cy.get("input[type='radio'][value='check']").check();
         cy.get("input[type='radio'][value='cc']").check();
         cy.get("input[type='checkbox'][name='agreeTermsCheckbox']").first().check();
-        cy.get('#paymentForm > .uk-margin-bottom > :nth-child(5) > .uk-form-controls > .uk-form-width-medium').type("Automation Test");
-        cy.get("input[name='undersignedTitle']").first().type("Test Title");
-        cy.get("input[name='undersignedEmail']").first().type("khargunani@registrarcorp.com");
+        cy.get('#paymentForm > .uk-margin-bottom > :nth-child(5) > .uk-form-controls > .uk-form-width-medium').type(PaymentDetails.Name);
+        cy.get("input[name='undersignedTitle']").first().type(PaymentDetails.Title);
+        cy.get("input[name='undersignedEmail']").first().type(PaymentDetails.emailid);
         cy.get('#paymentForm > .center > .uk-button').click();
         cy.get(':nth-child(1) > :nth-child(3) > .pay-by-stored-method').click();
         cy.get('.confirmation > h2.uk-text-center').should('have.text','Thank You');
         cy.get('.confirmation > :nth-child(3) > a').click()
     }
 
-    fillDetailsForCheckPayment(){
+    fillDetailsForCheckPayment(PaymentDetails){
         cy.get("input[type='radio'][value='check']").check();
         cy.get("#checkForm > .uk-margin-bottom > .agreeTermsDiv > input").check();
-        cy.get("input[name='undersignedName']").eq(2).type("Automation Test");
-        cy.get('#checkForm > .uk-margin-bottom > :nth-child(6) > .uk-form-controls > .uk-form-width-medium').type("Test Title");
-        cy.get('#checkForm > .uk-margin-bottom > :nth-child(7) > .uk-form-controls > .uk-form-width-medium').type("khargunani@registrarcorp.com");
+        cy.get("input[name='undersignedName']").eq(2).type(PaymentDetails.Name);
+        cy.get('#checkForm > .uk-margin-bottom > :nth-child(6) > .uk-form-controls > .uk-form-width-medium').type(PaymentDetails.Title);
+        cy.get('#checkForm > .uk-margin-bottom > :nth-child(7) > .uk-form-controls > .uk-form-width-medium').type(PaymentDetails.emailid);
         cy.get('#checkForm > .uk-margin-bottom > :nth-child(7) > .uk-form-controls > .uk-form-width-medium').click();
     }
     verifyInvoiceDetailsForBankWire(){
@@ -146,29 +147,29 @@ class FFPayment {
         })
         cy.get('#checkForm > .center > .uk-button').click();
         cy.get('.confirmation > h2.uk-text-center').should('have.text','Thank You');
-       // cy.get('.confirmation > :nth-child(3) > a').click()
-
    }
 
-   verifyEmailOnCheckPayment(){
+   verifyEmailOnCheckPayment(Inboxid){
     cy.then(()=>{
         cy.wrap(mailslurp).as('mailslurp')
       cy.then(function () {
-        return this.mailslurp.waitForLatestEmail('923afa32-ee38-4279-b97c-170f4ea93cdd',120_000,true);
+        return this.mailslurp.waitForLatestEmail(Inboxid,120_000,true);
       }).then(email =>{
-        expect(email.body).to.contain("Your online request was successfully submitted. Registrar Corp's Regulatory Specialists will update your registration and notify you via email once completed.")
+        expect(email.subject).to.contain("Thank you for renewing your Registration service");
+       // expect(email.body).to.contain("Your online request was successfully submitted. Registrar Corp's Regulatory Specialists will update your registration and notify you via email once completed.")
       })
       
     })
 
 }
-verifyEmailOnOnlinePayment(){
+verifyEmailOnOnlinePayment(Inboxid){
         cy.then(()=>{
             cy.wrap(mailslurp).as('mailslurp')
           cy.then(function () {
-            return this.mailslurp.waitForLatestEmail('923afa32-ee38-4279-b97c-170f4ea93cdd',120_000,true);
+            return this.mailslurp.waitForLatestEmail(Inboxid,120_000,true);
           }).then(email =>{
-            expect(email.body).to.contain("Your online request was successfully submitted. Registrar Corp's Regulatory Specialists will update your registration and notify you via email once completed.")
+            expect(email.subject).to.contain("Thank you for renewing your Registration service");
+           // expect(email.body).to.contain("Your online request was successfully submitted. Registrar Corp's Regulatory Specialists will update your registration and notify you via email once completed.")
           })
           
         })
