@@ -12,7 +12,7 @@ describe('Validate add drug registration process on myFDA', () => {
         cy.logger('application', "Validated success Login Msg-->Login Test");
     });
 
-    it('Verify that user can add registration data on myFDA', () => {
+    it('Verify that user downlaod and share the certificates on myFDA side', () => {
         cy.fixture('ContactDirect/MyFDA/UserCreation').then((data) => {
             const { desiredUserId, password } = data.subUser;
             cy.login(desiredUserId, password);

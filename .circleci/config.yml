@@ -5,7 +5,7 @@ workflows:
   use-my-orb:
     jobs:
       - cypress/run:
-          cypress-command: npx cypress run --browser chrome --headed --spec cypress/e2e/ContactDirect/Drugs/Labels.cy.js 
+          cypress-command: npx cypress run --browser chrome --headed --spec cypress\e2e\Home\FDA_Registarion\FoodFacility\FFViewCeritificates.cy.js 
                            node ./scripts/zipScript.js
           install-browsers: true
           post-steps:
