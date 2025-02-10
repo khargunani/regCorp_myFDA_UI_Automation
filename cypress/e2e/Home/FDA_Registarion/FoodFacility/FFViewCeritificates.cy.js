@@ -1,5 +1,3 @@
-import HomePage from "../../../../pages/ContactDirect/Home/Home/SearchCompanyPage";
-import FFAddRegistration from "../../../../pages/HomePage/FDARegistrationPage/FoodFacility/FFAddRegistrationPage";
 import FFViewCertificates from "../../../../pages/HomePage/FDARegistrationPage/FoodFacility/FFViewCertificatesPage";
 const startTime = Date.now();
 const FFobjcert = new FFViewCertificates();
@@ -12,12 +10,14 @@ describe('Validate add drug registration process on myFDA', () => {
         cy.logger('application', "Validated success Login Msg-->Login Test");
     });
 
-    it('Verify that user downlaod and share the certificates on myFDA side', () => {
+    it('Verify that user can add registration data on myFDA', () => {
         cy.fixture('ContactDirect/MyFDA/UserCreation').then((data) => {
             const { desiredUserId, password } = data.subUser;
             cy.login(desiredUserId, password);
             FFobjcert.verifyFFDownloadAndShareCertificates();
-            
+            cy.logger('MyFDA application', 'Verified food facilty certificated');
+            const loadTime = Date.now() - startTime;
+            cy.logger('performance', `Total time taken to Login and Create Inquiry: ${loadTime}ms`);
         })
-})
+    })
 })

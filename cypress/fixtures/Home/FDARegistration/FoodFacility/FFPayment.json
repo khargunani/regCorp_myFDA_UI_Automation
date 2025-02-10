@@ -1,8 +1,7 @@
 {
     "PaymentDetails": {
-       "Name":"Automation Test",
-       "Title": "Automation Test Title",
-       "emailid": "btapayment@mailslurp.biz"
+        "Name": "Automation Test",
+        "Title": "Automation Test Title",
+        "emailid": "paymentbta@mailslurp.biz"
     }
-
 }

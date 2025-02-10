@@ -7,7 +7,7 @@
         "physicalAddress": "Flat no: 0152, SQ High Hill Pune",
         "phoneNumber": "9988774455",
         "faxNumber": "25896396",
-        "emailAddress": "btaregistration@mailslurp.biz",
+        "emailAddress": "registrationbta@mailslurp.biz",
         "taxId": "1001",
         "city": "Pune",
         "country": "INDIA"
@@ -18,7 +18,7 @@
         "postalAddress": "Flat no: 0152, SQ High Hill Pune",
         "phoneNumber": "8696523366",
         "faxNumber": "25896325",
-        "emailAddress": "btaregistration@mailslurp.biz",
+        "emailAddress": "registrationbta@mailslurp.biz",
         "city": "Mumbai",
         "country": "INDIA"
     },
@@ -47,9 +47,6 @@
     "agreement": {
         "name": "Kimmy Test",
         "title": "QA",
-        "email": "btaregistration@mailslurp.biz"
-    },
-    "email": {
-        "emailAPIKey": "ebeeaefe-d3eb-4975-99ea-f2c5a9242448"
+        "email": "registrationbta@mailslurp.biz"
     }
 }

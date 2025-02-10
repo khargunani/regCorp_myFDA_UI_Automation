@@ -17,8 +17,11 @@ const Locators = {
     InquiryManagementLink: `Inquiry Management`,
     InquiryStage: `#inqStage`,
     Submit: `Submit`,
-    YesButton : `div[id='deleteInquiry'] button[type='submit']`,
-    DeleteButton : `#deleteeInquiry`
+    YesButton: `div[id='deleteInquiry'] button[type='submit']`,
+    DeleteButton: `#deleteeInquiry`,
+    UpdateBTATickler: `//a[normalize-space()='Update BTA']`,
+    PaymentCheckbox : `input[value="3"][name="renew_status"]`,
+    SubmitButton: `.uk-text-center.uk-margin-top > .uk-button`
 }
 
 const BTAInquiry = {
@@ -35,28 +38,28 @@ class CreateInquiry {
 
     openInquiryTab() {
         let createNewInquiry = false;
-        
+
         cy.contains(Locators.InquiryTab).click();
         cy.contains(Locators.AddInquiryLink).invoke("removeAttr", "target").click();
-    
+
         cy.get(Locators.InquiryTypeList).each(($el) => {
             cy.log($el.text());
             var inquirytype = $el.text();
             if (inquirytype.includes(" Renewal: US Reg Service ")) {
                 cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
-                    return false;  
-                } else{
-                    cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
-                    this.createInquiry();
-                    return false;
-                }
-            })
+                return false;
+            } else {
+                cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
+                this.createInquiry();
+                return false;
+            }
+        })
     }
-    
+
     createInquiry() {
         cy.get(Locators.SelectInquiry).select(BTAInquiry.Type);
         cy.get(Locators.SubInquiryClick).click();
-    
+
         cy.get(Locators.SelectsubInquiry).each(($ele) => {
             cy.log($ele.text());
             if ($ele.text() === BTAInquiry.SubType) {
@@ -68,7 +71,7 @@ class CreateInquiry {
         cy.get(Locators.SelectRepPlaceholder).select(BTAInquiry.RepPlaceholder);
         cy.contains(Locators.Submit).click();
     }
-    
+
     verifyInquiryIsUpdated() {
         cy.contains(Locators.InquiryTab).click();
         cy.wait(10000);
@@ -78,40 +81,40 @@ class CreateInquiry {
             cy.contains(Locators.InquiryManagementLink).click();
 
             // Verify the inquiry stage based on type
-            let expectedStage ='Closed-Pending-Payment';
+            let expectedStage = 'Closed-Pending-Payment';
             cy.get(Locators.InquiryStage).should('have.value', expectedStage);
             cy.get(Locators.DeleteButton).click();
             cy.window().then(() => {
                 cy.get(Locators.YesButton).click({ force: true });
-              })
+            })
         });
         cy.go('back');
     }
 
     openInquiryTabFor2Year() {
         let createNewInquiry = false;
-        
+
         cy.contains(Locators.InquiryTab).click();
         cy.contains(Locators.AddInquiryLink).invoke("removeAttr", "target").click();
-    
+
         cy.get(Locators.InquiryTypeList).each(($el) => {
             cy.log($el.text());
             var inquirytype = $el.text();
             if (inquirytype.includes(" Renewal: US Reg Service 2 year ")) {
                 cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
-                    return false;  
-                } else{
-                    cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
-                    this.createInquiryFor2Year();
-                    return false;
-                }
-            })
+                return false;
+            } else {
+                cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
+                this.createInquiryFor2Year();
+                return false;
+            }
+        })
     }
-    
+
     createInquiryFor2Year() {
         cy.get(Locators.SelectInquiry).select(BTAInquiry.Type);
         cy.get(Locators.SubInquiryClick).click();
-    
+
         cy.get(Locators.SelectsubInquiry).each(($ele) => {
             cy.log($ele.text());
             if ($ele.text() === BTAInquiry.SubType2) {
@@ -123,7 +126,7 @@ class CreateInquiry {
         cy.get(Locators.SelectRepPlaceholder).select(BTAInquiry.RepPlaceholder);
         cy.contains(Locators.Submit).click();
     }
-    
+
     verifyInquiryIsUpdatedFor2Year() {
         cy.contains(Locators.InquiryTab).click();
         cy.wait(10000);
@@ -133,40 +136,40 @@ class CreateInquiry {
             cy.contains(Locators.InquiryManagementLink).click();
 
             // Verify the inquiry stage based on type
-            let expectedStage ='Closed-Pending-Payment';
+            let expectedStage = 'Closed-Pending-Payment';
             cy.get(Locators.InquiryStage).should('have.value', expectedStage);
             cy.get(Locators.DeleteButton).click();
             cy.window().then(() => {
                 cy.get(Locators.YesButton).click({ force: true });
-              })
+            })
         });
         cy.go('back');
     }
 
     openInquiryTabFor3Year() {
         let createNewInquiry = false;
-        
+
         cy.contains(Locators.InquiryTab).click();
         cy.contains(Locators.AddInquiryLink).invoke("removeAttr", "target").click();
-    
+
         cy.get(Locators.InquiryTypeList).each(($el) => {
             cy.log($el.text());
             var inquirytype = $el.text();
             if (inquirytype.includes(" Renewal: US Reg Service 3 year ")) {
                 cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
-                    return false;  
-                } else{
-                    cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
-                    this.createInquiryFor3Year();
-                    return false;
-                }
-            })
+                return false;
+            } else {
+                cy.get('#activeInquiries > .uk-modal-dialog > .uk-form > center > .uk-button-primary').click();
+                this.createInquiryFor3Year();
+                return false;
+            }
+        })
     }
-    
+
     createInquiryFor3Year() {
         cy.get(Locators.SelectInquiry).select(BTAInquiry.Type);
         cy.get(Locators.SubInquiryClick).click();
-    
+
         cy.get(Locators.SelectsubInquiry).each(($ele) => {
             cy.log($ele.text());
             if ($ele.text() === BTAInquiry.SubType3) {
@@ -178,7 +181,7 @@ class CreateInquiry {
         cy.get(Locators.SelectRepPlaceholder).select(BTAInquiry.RepPlaceholder);
         cy.contains(Locators.Submit).click();
     }
-    
+
     verifyInquiryIsUpdatedFor3Year() {
         cy.contains(Locators.InquiryTab).click();
         cy.wait(10000);
@@ -188,12 +191,12 @@ class CreateInquiry {
             cy.contains(Locators.InquiryManagementLink).click();
 
             // Verify the inquiry stage based on type
-            let expectedStage ='Closed-Pending-Payment';
+            let expectedStage = 'Closed-Pending-Payment';
             cy.get(Locators.InquiryStage).should('have.value', expectedStage);
             cy.get(Locators.DeleteButton).click();
             cy.window().then(() => {
                 cy.get(Locators.YesButton).click({ force: true });
-              })
+            })
         });
         cy.go('back');
     }
@@ -207,12 +210,12 @@ class CreateInquiry {
             cy.contains(Locators.InquiryManagementLink).click();
 
             // Verify the inquiry stage based on type
-            let expectedStage ='Closed-Won';
+            let expectedStage = 'Closed-Won';
             cy.get(Locators.InquiryStage).should('have.value', expectedStage);
             cy.get(Locators.DeleteButton).click();
             cy.window().then(() => {
                 cy.get(Locators.YesButton).click({ force: true });
-              })
+            })
         });
         cy.go('back');
     }
@@ -226,12 +229,12 @@ class CreateInquiry {
             cy.contains(Locators.InquiryManagementLink).click();
 
             // Verify the inquiry stage based on type
-            let expectedStage ='Closed-Won';
+            let expectedStage = 'Closed-Won';
             cy.get(Locators.InquiryStage).should('have.value', expectedStage);
             cy.get(Locators.DeleteButton).click();
             cy.window().then(() => {
                 cy.get(Locators.YesButton).click({ force: true });
-              })
+            })
         });
         cy.go('back');
     }
@@ -245,15 +248,38 @@ class CreateInquiry {
             cy.contains(Locators.InquiryManagementLink).click();
 
             // Verify the inquiry stage based on type
-            let expectedStage ='Closed-Won';
+            let expectedStage = 'Closed-Won';
             cy.get(Locators.InquiryStage).should('have.value', expectedStage);
             cy.get(Locators.DeleteButton).click();
             cy.window().then(() => {
                 cy.get(Locators.YesButton).click({ force: true });
-              })
+            })
         });
         cy.go('back');
     }
+
+    verifyCheckboxForUncheckPayment() {
+        cy.xpath(Locators.UpdateBTATickler).should('be.visible').click();
+        cy.get(Locators.PaymentCheckbox).then(($checkbox) => {
+            if ($checkbox.prop('checked')) {
+                cy.wrap($checkbox).uncheck();
+            }
+            cy.get(Locators.SubmitButton).should('be.visible').click();
+            cy.wait(10000);
+        });
+    }
+
+    verifyCheckboxForCheckPayment() {
+        cy.xpath(Locators.UpdateBTATickler).should('be.visible').click();
+        cy.get(Locators.PaymentCheckbox).then(($checkbox) => {
+            if (!$checkbox.prop('checked')) {
+                cy.wrap($checkbox).check();
+            }
+        });
+        cy.get(Locators.SubmitButton).should('be.visible').click();
+        cy.wait(10000);
+    }
+
 }
 
 export default CreateInquiry;

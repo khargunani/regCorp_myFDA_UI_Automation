@@ -8,12 +8,12 @@
         "confirmPassword": "AdminTest123"
     },
     "subUser": {
-        "desiredUserId": "KimPossible",
+        "desiredUserId": "AutomationTest",
         "emailAddress": "AutomationSub123@gmail.com",
         "contactName": "Automation Sub User",
         "jobTitle": "Junior QA",
-        "password": "KimPossible",
-        "confirmPassword": "KimPossible"
+        "password": "AutomationTest",
+        "confirmPassword": "AutomationTest"
     },
         "subUserAccess": {
             "0": { "key": "foodFacilityInformation", "description": "Food facility registration information" },

@@ -336,3 +336,13 @@
 [2025-01-24T10:15:40.496Z] Total time taken to Login and Create Inquiry: 46ms
 [2025-01-27T13:32:31.696Z] Total time taken to Login and Create Inquiry: 122ms
 [2025-01-28T08:01:46.584Z] Total time taken to Login and Create Inquiry: 56779ms
+[2025-01-30T13:55:04.093Z] Total time taken to Login and Create Inquiry: 52724ms
+[2025-01-31T10:01:32.707Z] Total time taken to Login and Create Inquiry: 33134ms
+[2025-02-05T08:11:44.054Z] TotalTime taken to SignUpUser: 57485ms
+[2025-02-05T08:40:16.075Z] TotalTime taken to SignUpUser: 53255ms
+[2025-02-05T08:47:53.009Z] TotalTime taken to SignUpUser: 52167ms
+[2025-02-05T08:52:31.908Z] TotalTime taken to SignUpUser: 52311ms
+[2025-02-06T05:48:26.438Z] TotalTime taken to SignUpUser: 19891ms
+[2025-02-06T07:47:32.329Z] TotalTime taken to SignUpUser: 19556ms
+[2025-02-06T08:08:13.170Z] TotalTime taken to SignUpUser: 23060ms
+[2025-02-06T08:13:47.411Z] TotalTime taken to SignUpUser: 28346ms

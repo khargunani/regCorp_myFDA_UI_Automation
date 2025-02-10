@@ -5,7 +5,7 @@ const Locators = {
     ShareIcon: '[href="#"] > .uk-icon',
     ShareEmailID: '.uk-form-width-large',
     SubmitButton: '.center > .uk-button',
-    EmailAlert:'.uk-alert'
+    EmailAlert: '.uk-alert'
 
 }
 
@@ -13,7 +13,7 @@ const Texts = {
     fdaRegistartionText: `FDA Registration`,
     ViewCertificate: 'View Certificate',
     ManageRegistration: `Manage Registration`,
-    FoodFacility:'Food Facility',
+    FoodFacility: 'Food Facility',
     EmailMessage: 'Email is sent',
     EmailID: 'khargunani@registrarcorp.com'
 }
@@ -29,13 +29,10 @@ class FFViewCertificates {
         cy.get(Locators.ShareIcon).click();
         cy.get(Locators.ShareEmailID).type(Texts.EmailID);
         cy.get(Locators.SubmitButton).click();
-        cy.then(()=>{
-            cy.get(Locators.EmailAlert).should('be.visible').and('contain.text',Texts.EmailMessage);
+        cy.then(() => {
+            cy.get(Locators.EmailAlert).should('be.visible').and('contain.text', Texts.EmailMessage);
         })
-
-
     }
-
-   }
+}
 
 export default FFViewCertificates;

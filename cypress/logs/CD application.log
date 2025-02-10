@@ -307,3 +307,119 @@
 [2025-01-28T08:16:03.898Z] Search for test company
 [2025-01-28T08:16:10.513Z] Verified payment details updated on CD side
 [2025-01-28T08:16:18.757Z] redirecting to homepage
+[2025-01-30T13:32:01.616Z] Search for Kimmy Test company
+[2025-01-30T13:32:19.012Z] Verify if payment checkbox is unchecked
+[2025-01-30T13:32:33.158Z] Open and create an inquiry
+[2025-01-30T13:32:34.210Z] Return to a Kimmy Test company
+[2025-01-30T13:32:36.030Z] Sign Out from Kimmy Test Company
+[2025-01-30T13:33:47.949Z] Search for Kimmy Test company
+[2025-01-30T13:34:02.645Z] Verify if payment checkbox is unchecked
+[2025-01-30T13:34:06.815Z] Open and create an inquiry
+[2025-01-30T13:34:07.879Z] Return to a Kimmy Test company
+[2025-01-30T13:34:09.768Z] Sign Out from Kimmy Test Company
+[2025-01-30T13:36:17.537Z] Search for Kimmy Test company
+[2025-01-30T13:36:31.985Z] Verify if payment checkbox is unchecked
+[2025-01-30T13:36:36.204Z] Open and create an inquiry
+[2025-01-30T13:36:37.266Z] Return to a Kimmy Test company
+[2025-01-30T13:36:39.041Z] Sign Out from Kimmy Test Company
+[2025-01-30T13:42:30.221Z] Search for Kimmy Test company
+[2025-01-30T13:42:48.057Z] Verify if payment checkbox is unchecked
+[2025-01-30T13:42:59.066Z] Open and create an inquiry
+[2025-01-30T13:43:00.209Z] Return to a Kimmy Test company
+[2025-01-30T13:43:01.981Z] Sign Out from Kimmy Test Company
+[2025-01-30T13:44:21.625Z] Search for NewTest company
+[2025-01-30T13:53:02.892Z] Search for Kimmy Test company
+[2025-01-30T13:53:20.439Z] Verify if payment checkbox is unchecked
+[2025-01-30T13:53:32.467Z] Open and create an inquiry
+[2025-01-30T13:53:33.592Z] Return to a Kimmy Test company
+[2025-01-30T13:53:35.322Z] Sign Out from Kimmy Test Company
+[2025-01-30T13:54:45.426Z] Search for NewTest company
+[2025-01-30T13:55:01.539Z] Verifying inquiry stage is updated or not
+[2025-01-30T13:55:03.997Z] Verifying email after payment is done
+[2025-01-30T13:55:30.913Z] Search for Kimmy Test company
+[2025-01-30T13:55:45.510Z] Verify if payment checkbox is unchecked
+[2025-01-30T13:55:52.674Z] Open and create an inquiry
+[2025-01-30T13:55:53.728Z] Return to a Kimmy Test company
+[2025-01-30T13:55:55.549Z] Sign Out from Kimmy Test Company
+[2025-01-31T06:18:15.221Z] Search for Kimmy Test company
+[2025-01-31T06:18:19.778Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T06:18:32.634Z] Open and create an inquiry
+[2025-01-31T06:18:33.694Z] Return to a Kimmy Test company
+[2025-01-31T06:18:35.175Z] Sign Out from Kimmy Test Company
+[2025-01-31T06:19:46.141Z] Search for test company
+[2025-01-31T06:19:48.144Z] Verified payment details updated on CD side
+[2025-01-31T06:19:49.510Z] redirecting to homepage
+[2025-01-31T06:20:18.294Z] Verifying inquiry stage is updated or not
+[2025-01-31T06:23:47.883Z] Search for Kimmy Test company
+[2025-01-31T06:23:49.687Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T06:23:57.188Z] Open and create an inquiry
+[2025-01-31T06:23:58.233Z] Return to a Kimmy Test company
+[2025-01-31T06:23:59.596Z] Sign Out from Kimmy Test Company
+[2025-01-31T06:28:10.168Z] Search for Kimmy Test company
+[2025-01-31T06:28:12.010Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T06:28:16.987Z] Open and create an inquiry
+[2025-01-31T06:28:18.034Z] Return to a Kimmy Test company
+[2025-01-31T06:28:19.163Z] Sign Out from Kimmy Test Company
+[2025-01-31T06:52:33.714Z] Search for Kimmy Test company
+[2025-01-31T06:52:35.574Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T06:52:44.207Z] Open and create an inquiry
+[2025-01-31T06:52:45.223Z] Return to a Kimmy Test company
+[2025-01-31T06:52:46.895Z] Sign Out from Kimmy Test Company
+[2025-01-31T06:56:22.742Z] Search for Kimmy Test company
+[2025-01-31T06:56:26.944Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T06:56:38.577Z] Open and create an inquiry
+[2025-01-31T06:56:39.595Z] Return to a Kimmy Test company
+[2025-01-31T06:56:41.268Z] Sign Out from Kimmy Test Company
+[2025-01-31T06:57:36.945Z] Search for Kimmy Test company
+[2025-01-31T06:57:38.865Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T06:57:44.208Z] Open and create an inquiry
+[2025-01-31T06:57:45.223Z] Return to a Kimmy Test company
+[2025-01-31T06:57:46.395Z] Sign Out from Kimmy Test Company
+[2025-01-31T09:59:32.092Z] Search for Kimmy Test company
+[2025-01-31T09:59:37.041Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T09:59:49.047Z] Open and create an inquiry
+[2025-01-31T09:59:50.148Z] Return to a Kimmy Test company
+[2025-01-31T09:59:51.663Z] Sign Out from Kimmy Test Company
+[2025-01-31T10:01:10.857Z] Search for test company
+[2025-01-31T10:01:13.049Z] Verified payment details updated on CD side
+[2025-01-31T10:01:14.600Z] redirecting to homepage
+[2025-01-31T10:01:30.063Z] Verifying inquiry stage is updated or not
+[2025-01-31T10:01:32.572Z] Verifying email on successful payemnt for 1 year renewal
+[2025-01-31T10:02:16.057Z] Search for Kimmy Test company
+[2025-01-31T10:02:17.930Z] checking if custom or discount price is configured if yes then payment will be done for that price
+[2025-01-31T10:02:26.075Z] Open and create an inquiry
+[2025-01-31T10:02:27.142Z] Return to a Kimmy Test company
+[2025-01-31T10:02:28.578Z] Sign Out from Kimmy Test Company
+[2025-01-31T10:16:16.886Z] Search for Kimmy Test company
+[2025-01-31T10:16:30.369Z] Open and create an inquiry
+[2025-01-31T10:16:31.403Z] Return to a Kimmy Test company
+[2025-01-31T10:16:33.008Z] Sign Out from Kimmy Test Company
+[2025-01-31T10:17:02.660Z] Search for Kimmy Test company
+[2025-01-31T10:26:47.546Z] Search for Kimmy Test company
+[2025-01-31T10:27:01.433Z] Open and create an inquiry
+[2025-01-31T10:27:02.508Z] Return to a Kimmy Test company
+[2025-01-31T10:27:04.313Z] Sign Out from Kimmy Test Company
+[2025-01-31T10:28:23.247Z] Search for Kimmy Test company
+[2025-01-31T10:28:30.672Z] Open and create an inquiry
+[2025-01-31T10:28:31.843Z] Return to a Kimmy Test company
+[2025-01-31T10:28:33.436Z] Sign Out from Kimmy Test Company
+[2025-01-31T10:29:35.728Z] Search for Kimmy Test company
+[2025-01-31T10:29:44.001Z] Open and create an inquiry
+[2025-01-31T10:29:45.230Z] Return to a Kimmy Test company
+[2025-01-31T10:29:47.042Z] Sign Out from Kimmy Test Company
+[2025-01-31T13:02:19.365Z] Search for Kimmy Test company
+[2025-01-31T13:02:32.606Z] Open and create an inquiry
+[2025-01-31T13:02:33.664Z] Return to a Kimmy Test company
+[2025-01-31T13:02:35.488Z] Sign Out from Kimmy Test Company
+[2025-01-31T13:09:35.260Z] Search for Kimmy Test company
+[2025-01-31T13:09:39.556Z] Open and create an inquiry
+[2025-01-31T13:09:40.726Z] Return to a Kimmy Test company
+[2025-01-31T13:09:41.978Z] Sign Out from Kimmy Test Company
+[2025-01-31T13:13:08.815Z] Search for Kimmy Test company
+[2025-01-31T13:13:18.580Z] Open and create an inquiry
+[2025-01-31T13:13:19.691Z] Return to a Kimmy Test company
+[2025-01-31T13:13:21.445Z] Sign Out from Kimmy Test Company
+[2025-02-05T08:11:38.916Z] Search for NewTest company
+[2025-02-05T08:40:12.022Z] Search for NewTest company
+[2025-02-05T08:47:48.603Z] Search for NewTest company
+[2025-02-05T08:52:29.767Z] Search for NewTest company

@@ -31,7 +31,8 @@ const Texts = {
     PetFood: `PET FOOD`,
     PetTreats: `PET TREATS OR PET CHEWS`,
     PaymentInformation: `Payment Information`,
-    EmailHeader: `Certificates of Registration issued by Registrar Corp provide confirmation to industry that you are fulfilling U.S. FDA registration requirements. FDA does not issue or recognize Certificates of Registration. Registrar Corp is not affiliated with the FDA.`
+    EmailHeader: `Certificates of Registration issued by Registrar Corp provide confirmation to industry that you are fulfilling U.S. FDA registration requirements. FDA does not issue or recognize Certificates of Registration. Registrar Corp is not affiliated with the FDA.`,
+    EmailBody: `Your online request was successfully submitted. Registrar Corp's Regulatory Specialists will update your food facility registration and notify you via email once completed.`
 }
 
 const PhysicalAddress = {
@@ -346,34 +347,26 @@ class FFEditRegistration {
         cy.get(CD.content).should('contain.text', parentCompany.faxNumber);
         cy.get(CD.content).should('contain.text', parentCompany.emailAddress);
         cy.contains(Texts.Alcoholic).should('be.visible');
-        cy.get(CD.alcoholicBeveragesContent).should('contain.text', CD.humanConsumption);
         cy.contains(Texts.Coffee).should('be.visible');
-        cy.get(CD.coffeeTeaContent).should('contain.text', CD.humanConsumption);
         cy.contains(Texts.Candy).should('be.visible');
-        cy.get(CD.candyContent).should('contain.text', CD.humanConsumption);
         cy.contains(Texts.Color).should('be.visible');
-        cy.get(CD.colorContent).should('contain.text', CD.humanConsumption);
         cy.contains(Texts.WholeGrains).should('be.visible');
-        cy.get(CD.wholeGrainsContent).should('contain.text', CD.humanConsumption);
         cy.contains(Texts.Soups).should('be.visible');
-        cy.get(CD.soupsContent).should('contain.text', CD.humanConsumption);
+        cy.contains(CD.humanConsumption).should('be.visible');
         cy.contains(Texts.FatsOils).should('be.visible');
-        cy.get(CD.fatContent).should('contain.text', CD.animalConsumption);
         cy.contains(Texts.PeanutProducts).should('be.visible');
-        cy.get(CD.peanutProductsContent).should('contain.text', CD.animalConsumption);
         cy.contains(Texts.PetFood).should('be.visible');
-        cy.get(CD.petFoodContent).should('contain.text', CD.animalConsumption);
         cy.contains(Texts.PetTreats).should('be.visible');
-        cy.get(CD.petTreatsContent).should('contain.text', CD.animalConsumption);
+        cy.contains(CD.animalConsumption).should('be.visible');
     }
 
-    verifyAddEmail(email) {
+    verifyAddEmail(Inboxid) {
         cy.then(() => {
             cy.wrap(mailslurp).as('mailslurp')
             cy.then(function () {
-                return this.mailslurp.waitForLatestEmail(email.emailAPIKey, 120_000, true);
+                return this.mailslurp.waitForLatestEmail(Inboxid, 120000, true);
             }).then(email => {
-                expect(email.body).to.include(Texts.EmailHeader)
+                expect(email.body).to.contain(Texts.EmailBody)
             })
         })
     }

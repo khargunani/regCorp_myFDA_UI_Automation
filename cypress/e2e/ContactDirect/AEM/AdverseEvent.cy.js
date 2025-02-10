@@ -1,8 +1,10 @@
+/// <reference types="cypress" />
+import AEMDetails from "../../../pages/ContactDirect/AEM/AEMDetailsPage"
 import HomePage from "../../../pages/ContactDirect/Home/Home/SearchCompanyPage";
-import BTACertificate from "../../../pages/ContactDirect/BTA/BTACertificatePage"
+
 const startTime = Date.now();
-const BTACertObj = new BTACertificate();
-describe('Validate food facility certification process on myFDA', () => {
+const AEMDEtailsObj = new AEMDetails();
+describe('Validate upload food facility certification process on myFDA', () => {
 
     beforeEach(() => {
         cy.visit(Cypress.env('CDurl'), { failOnStatusCode: false });
@@ -16,16 +18,12 @@ describe('Validate food facility certification process on myFDA', () => {
         cy.logger('application', "Validated success Login Msg-->Login Test");
         const homepage = new HomePage();
         homepage.goForCompany();
-        cy.logger('CD application', 'Search for Kimmy Test company');
+       // homepage.goForKimmyCompany();
+        cy.logger('CD application', 'Search for NewTest company');
     });
 
     it('Verify that user is able to upload the certificate on cd side', () => {
-        BTACertObj.verifyUploadBTACertificates();
-        cy.logger('CD application', 'Verified upload certicate functionality');
-        BTACertObj.verifyUpdateBTACertificates();
-        cy.logger('CD application', 'Verified update uploaded certicate functionality');
-        BTACertObj.verifyDeleteBTACertificates();
-        cy.logger('CD application', 'Verified delete uploaded certicate functionality');
+        AEMDEtailsObj.verifyAEMDetails();
         const loadTime = Date.now() - startTime;
         cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
     })
