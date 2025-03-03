@@ -2,6 +2,7 @@
     "PaymentDetails": {
         "Name": "Automation Test",
         "Title": "Automation Test Title",
-        "emailid": "paymentbta@mailslurp.biz"
+        "emailid": "btapayment@guerrillamail.com",
+        "EmailSubject":"Thank you for renewing your Registration service"
     }
 }

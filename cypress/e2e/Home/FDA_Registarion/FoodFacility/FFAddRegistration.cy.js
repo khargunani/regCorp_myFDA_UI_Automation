@@ -5,7 +5,7 @@ const startTime = Date.now();
 const FFobj = new FFAddRegistration();
 const createinquiry = new CreateInquiry();
 const emailId = {
-    inboxid: '28489ee5-b458-4092-8dc6-9b76266586d5'
+    inboxid: 'da8f96f2-886f-4b6d-956b-4521baf42e0e'
 };
 describe('Validate add food facility registration process on myFDA', () => {
 
@@ -73,7 +73,8 @@ describe('Validate add food facility registration process on myFDA', () => {
                     , registrationData.emergencyContact, registrationData.parentCompany, registrationData.agreement
                 );
                 cy.logger('CD application', 'Verify drug registration edites records on CD app');
-                FFobj.verifyAddEmail(emailId.inboxid);
+                //FFobj.verifyAddEmail(emailId.inboxid);
+                FFobj.configureEmail(registrationData.agreement);
                 cy.logger('CD application', 'Verify email header triggered successfully on mailslurp ');
                 const loadTime = Date.now() - startTime;
                 cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);

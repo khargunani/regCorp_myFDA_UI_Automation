@@ -7,8 +7,8 @@ const FFobjpay = new FFPayment();
 const homepage = new HomePage();
 const createinquiry = new CreateInquiry();
 const data = {
-    email: 'paymentbta@mailslurp.biz',
-    inboxid: '74e68477-0522-476d-aa50-7cf702b29074'
+    email: 'user-da8f96f2-886f-4b6d-956b-4521baf42e0e@mailslurp.biz',
+    inboxid: 'da8f96f2-886f-4b6d-956b-4521baf42e0e'
 };
 describe('Validate all payment flow with different mode on myFDA', () => {
 
@@ -52,7 +52,7 @@ describe('Validate all payment flow with different mode on myFDA', () => {
             cy.logger('MyFDA application', 'Details for online payment');
             cy.MyFDALogOut();
             cy.logger('MyFDA application', 'Logout successfully');
-        })
+        
         cy.visit(Cypress.env('CDurl'), { failOnStatusCode: false });
         cy.logger('applicationCD', "CD Launched Application-->Login Test");
         cy.fixture('./ContactDirect/Login/LoginPage').then((data) => {
@@ -71,9 +71,11 @@ describe('Validate all payment flow with different mode on myFDA', () => {
         cy.logger('CD application', 'redirecting to homepage');
         createinquiry.verifyInquiryIsUpdatedForOnlinePayment3Year();
         cy.logger('CD application', 'Verifying inquiry stage is updated or not');
-        FFobjpay.verifyEmailOnOnlinePayment(data.inboxid);
+        //FFobjpay.verifyEmailOnOnlinePayment(data.inboxid);
+        FFobjpay.configureEmail(data.PaymentDetails);
         cy.logger('CD application', 'Verifying email on successful payemnt for 1 year renewal');
         const loadTime = Date.now() - startTime;
         cy.logger('performance', `Total time taken to Login and Create Inquiry: ${loadTime}ms`);
     })
+})
 })

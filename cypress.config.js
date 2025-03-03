@@ -14,10 +14,10 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   video: true,
   env: {
-    "myFDAurl": 'https://testweb.myfda.com:5643/login/',
-    "CDurl": 'https://dev.contactdirect.com/cdlogin.jsp',
+    "myFDAurl": 'https://testweb.myfda.com:5643/signin',
+    "CDurl": 'https://testweb.myfda.com:8743/cdlogin.jsp',
      "myFDA": 'https://testweb.myfda.com:5643/signin',
-      "MAILSLURP_API_KEY": `ace7692b6910912fcb75b02f5158e7b8541bd260591ef30ab2fd8817a09cd5d8`
+      "MAILSLURP_API_KEY": `83c8ae93411d39f737f2784a939b3c7687125d58924efe754a7f55b02fe549d2`
   
 },
   reporterOptions: {
@@ -40,12 +40,11 @@ module.exports = defineConfig({
         });
         on('task', {downloadFile});
         return config;
-        
-      
     } 
   }
   
 })
+
 
 function readPdf(pdfPath)
 {

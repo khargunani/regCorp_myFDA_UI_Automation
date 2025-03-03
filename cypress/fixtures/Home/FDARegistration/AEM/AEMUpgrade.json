@@ -1,0 +1,29 @@
+{
+    "BlockValues": {
+        "0": {
+            "Block1": "1-10"
+        },
+        "1": {
+            "Block2": "11-25"
+        },
+        "2": {
+            "Block3": "26-50"
+        },
+        "3": {
+            "Block4": "51-100"
+        }
+    },
+    "BlockPrice": {
+        "0": "500",
+        "1": "500",
+        "2": "1500",
+        "3": "2500"
+    },
+    "NotepadInfo": {
+        "PaymentMethod": "Payment Method: Wire",
+        "Authorized Person Name": "AutomationTest",
+        "Authorized Person Title": "AutomationTest",
+        "Authorized Person Email": "user-da8f96f2-886f-4b6d-956b-4521baf42e0e@mailslurp.biz",
+        "PaymentCCMethod": "Payment Method: credit_card"
+        }
+}

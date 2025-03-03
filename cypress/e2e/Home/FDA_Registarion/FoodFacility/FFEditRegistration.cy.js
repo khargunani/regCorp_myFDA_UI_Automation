@@ -5,7 +5,7 @@ const createinquiry = new CreateInquiry();
 const startTime = Date.now();
 const FFobj = new FFEditRegistration();
 const emailId = {
-    inboxid: '28489ee5-b458-4092-8dc6-9b76266586d5'
+    inboxid: 'da8f96f2-886f-4b6d-956b-4521baf42e0e'
 };
 describe('Validate edit food facility registration process on myFDA', () => {
 

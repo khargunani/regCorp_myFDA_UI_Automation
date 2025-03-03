@@ -38,10 +38,11 @@ Cypress.Commands.add('getText', (element) => {
       .invoke('text')
   })
 
-cy.on('uncaught:exception', (err, runnable) => {
-    // Return false to prevent Cypress from failing the test
-    return false;
-})
+//   Cypress.on('uncaught:exception', (err, runnable) => {
+//     expect(err.message).to.eq('my error')
+//     return false;
+//   })
+  
 
 Cypress.on('uncaught:exception',(err,runnable)=>{
     return false;
@@ -101,10 +102,12 @@ Cypress.Commands.add('DeleteSubUser', (subUser) => {
         cy.get('table').contains('td', specificUser).should('not.exist');
     });
 })
+
 Cypress.Commands.add('login', (UserName, UserPassword) => {
+    cy.reload();
     cy.get("input[placeholder='User ID']").type(UserName);
     cy.get("#password-field").type(UserPassword);
-    cy.get("input[name='captchaTxt']").type("anyText"); 
+    cy.get("input[name='captchaTxt']").type("anyText");
     cy.wait(10000);
     cy.get(":nth-child(12) > .uk-width-1-1").click();
     cy.url().should('include', '/login');

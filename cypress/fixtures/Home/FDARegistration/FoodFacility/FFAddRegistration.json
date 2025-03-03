@@ -28,7 +28,7 @@
         "lastName": "Mass",
         "jobTitle": "Owner",
         "phoneNumber": "8696523334",
-        "emailAddress": "johnTest@gmail.com"
+        "emailAddress": "registrationbta@mailslurp.biz"
     },
     "parentCompany": {
         "companyName": "Green Creamery",
@@ -47,6 +47,7 @@
     "agreement": {
         "name": "Kimmy Test",
         "title": "QA",
-        "email": "registrationbta@mailslurp.biz"
+        "email": "btaregistrationmail@guerrillamail.com",
+        "EmailSubject": "Your online request was successfully submitted. Registrar Corp's Regulatory Specialists will update your food facility registration and notify you via email once completed."
     }
 }
