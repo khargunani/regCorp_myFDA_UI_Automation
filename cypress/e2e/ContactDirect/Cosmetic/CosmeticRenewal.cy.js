@@ -10,6 +10,7 @@ import HomePage from "../../../pages/ContactDirect/Home/Home/SearchCompanyPage";
 const startTime = Date.now();
 describe('Validate ',()=>{
 
+   
    beforeEach(() => {
       cy.fixture('./ContactDirect/Login/LoginPage').then((login) => {
           cy.LoginCD(login.username, login.password)

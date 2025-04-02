@@ -54,7 +54,23 @@ configureEmail(Input)
             cy.wait(1000)
             cy.get(Locator.editBtn).click()
             cy.wait(100)
-            cy.get(Locator.inputEmailAddr).clear().as('inputEmail')
+            cy.get(Locator.inputEmailAddr).clear().as('inputEmail');
+            cy.get('@inputEmail').type(Input.tempEmail)
+            cy.wait(100)
+            cy.get(Locator.emailAddrSetBtn).click()        
+            cy.wait(2000)
+            cy.get(Locator.emailList).contains(Input.EmailSubject).click();                          
+    }
+
+
+    configureEmail1(Input)
+    {
+        cy.visit('https://www.guerrillamail.com/',{timeout:60000})              
+            cy.get(Locator.selectDomainFromDD).select('guerrillamail.biz').should('have.value','guerrillamail.biz')
+            cy.wait(1000)
+            cy.get(Locator.editBtn).click()
+            cy.wait(100)
+            cy.get(Locator.inputEmailAddr).clear().as('inputEmail');
             cy.get('@inputEmail').type(Input.tempEmail)
             cy.wait(100)
             cy.get(Locator.emailAddrSetBtn).click()        
@@ -97,11 +113,11 @@ VerifyPricing(){
           })
     }
 
-VerifyPAymentbyCC(Name,Title,Email){
+VerifyPAymentbyCC(Input){
         cy.get(Locator.AgreementOnline).first().check();
-        cy.get(Locator.Name).first().type(Name);
-        cy.get(Locator.Title).first().type(Title);
-        cy.get(Locator.Email).first().type(Email)
+        cy.get(Locator.Name).first().type(Input.Name);
+        cy.get(Locator.Title).first().type(Input.Title);
+        cy.get(Locator.Email).first().type(Input.tempEmail)
         cy.get(Locator.NextButtonCC).click();
         cy.get(Locator.Confirmation).should('be.visible');
     

@@ -23,6 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
 require('cypress-downloadfile/lib/downloadFileCommand');
 import CDLogin from "../pages/ContactDirect/LoginPage/LoginPage";
 import Login from "../pages/LoginPage/LoginPage";
@@ -67,17 +69,6 @@ Cypress.Commands.add('logger', (filename, message) => {
     })                                                                                         // { cacheAcrossSpecs: true }
 });
 
-// Cypress.Commands.add('LoginCD', (username, password) => {
-//     cy.session([username, password], () => {
-//         const loginObj = new CDLogin();
-//         cy.visit(Cypress.env('CDurl'),{failOnStatusCode: false})
-//         loginObj.userLogin(username, password);
-//         cy.wait(2000);
-//        // cy.url().should('contain', '/loginserv');
-//         //loginObj.verifyLoginSuccess();
-//         cy.logger('CDLogin', "Validated success Login Msg-->Login Test");
-//     })                                                                                         // { cacheAcrossSpecs: true }
-// });
 Cypress.Commands.add('LoginCD', (username, password) => {
     cy.xpath("//input[@name='email']").should('be.visible').clear().type(username);
     cy.get("input[name='password']").should('be.visible').clear().type(password);
@@ -85,7 +76,7 @@ Cypress.Commands.add('LoginCD', (username, password) => {
     cy.url().should('include', '/loginserv');
 })
 
-Cypress.Commands.add('DeleteSubUser', (subUser) => {
+Cypress.Commands.add('DeleteSubUser', (subUser) => {   
     const specificUser = subUser.desiredUserId;
     cy.wait(20000);
     cy.get("a[onclick='document.MyFdaAdminForm.submit(); return false;']").should('be.visible').and('contain.text', "MyFDA").click();
@@ -113,26 +104,35 @@ Cypress.Commands.add('login', (UserName, UserPassword) => {
     cy.url().should('include', '/login');
 });
 
+Cypress.Commands.add('loginUS', (UserName, UserPassword) => {
+    cy.reload();
+    cy.get("input[placeholder='User ID']").type(UserName);
+    cy.get("#password-field").type(UserPassword);
+    cy.get("input[name='captchaTxt']").type("anyText");
+    cy.wait(10000);
+    cy.get(":nth-child(12) > .uk-width-1-1").click();
+    cy.url().should('include', '/login');
+});
+
+Cypress.Commands.add('loginNonUS', (UserName, UserPassword) => {
+    cy.reload();
+    cy.get("input[placeholder='User ID']").type(UserName);
+    cy.get("#password-field").type(UserPassword);
+    cy.get("input[name='captchaTxt']").type("anyText");
+    cy.wait(10000);
+    cy.get(":nth-child(12) > .uk-width-1-1").click();
+    cy.url().should('include', '/login');
+});
+
 Cypress.Commands.add('MyFDALogOut', () => {
     cy.get('a[title="Sign Out"]').click();
 });
 
 Cypress.Commands.add('CDSignOut',() => {
-cy.get(`img[name='memberSignOut']`).click();
+cy.get(`img[name='memberSignOut']`).click({force: true});
 })
 
-// Cypress.Commands.add('getIframe', (iframeSelector) => {
-//     cy.get('iframe') // Get the iframe
-//       .its('0.contentDocument') // Access the iframe's contentDocument
-//       .should('exist') // Ensure the document inside the iframe exists
-//       .then((doc) => cy.wrap(doc)); // Wrap the iframe document to make it chainable
-//   });
-//   Cypress.Commands.add('getIframe' => {
-//     return cy.get(`iframe[src="/fda/intranet/drug/spl/read.xhtml?company=2474005"]`)
-//         .its('0.contentDocument.body')
-//         .should('be.visible')
-//         .then(cy.wrap);
-// })
+
 
 
 

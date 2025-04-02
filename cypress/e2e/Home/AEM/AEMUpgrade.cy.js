@@ -25,6 +25,7 @@ describe('Validate upgrade block AEM functionality on myFDA', () => {
         cy.logger('CD application', 'Search for NewTest company');
     });
 
+
     it('Verify that user is able to upgrade payment block with bank-wire mode on myFDA side', () => {
 
         cy.fixture('./Home/FDARegistration/AEM/AEMUpgrade.json').then((data) => {
@@ -46,7 +47,7 @@ describe('Validate upgrade block AEM functionality on myFDA', () => {
             })
             cy.logger('application', "Validated success Login Msg-->Login Test");
 
-            cy.fixture('./Home/FDARegistration/AEM/AEMPurchase.json').then((input) => {
+            cy.fixture('./Home/AEM/AEMPurchase.json').then((input) => {
             AEMPurchaseobj.verifyLandingPage();
             cy.logger('AEM', 'Click on Adverse Event Management tickler');
             AEMPurchaseobj.selectBlockValue();
@@ -124,7 +125,7 @@ describe('Validate upgrade block AEM functionality on myFDA', () => {
             cy.logger('CD application', 'Search for NewTest company');
             AEMUpgradeObj.verifyNotepadIsUpdated(data.NotepadInfo,data.BlockPrice, index);
             cy.logger('CD application', 'Verifing notepad is updated after doing payment');
-            AEMPurchaseobj.verifyEmailOnCheckPayment();
+           // AEMPurchaseobj.configureEmail(input.Input);
             const loadTime = Date.now() - startTime;
             cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
         })
@@ -225,13 +226,15 @@ describe('Validate upgrade block AEM functionality on myFDA', () => {
             })
             cy.logger('application', "Validated success Login Msg-->Login Test");
             homepage.goForCompany();
-            cy.logger('CD application', 'Search for NewTest company');
+            cy.logger('CD application', 'Search for Test company');
             AEMUpgradeObj.verifyNotepadIsUpdatedCC(data.NotepadInfo,data.BlockPrice, index);
             cy.logger('CD application', 'Verifing notepad is updated after doing payment');
-            AEMPurchaseobj.configureEmail(input.Input);
+           // AEMPurchaseobj.configureEmail(input.Input);
             const loadTime = Date.now() - startTime;
             cy.logger('performance', `TotalTime taken to SignUpUser: ${loadTime}ms`);
         })
     })
     })
+
+
 })

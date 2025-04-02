@@ -5,8 +5,6 @@ class CDLogin{
     username = '[type="text"]'
     password = '[type="password"]'
     signInBtn = 'a.Copy > b > nobr'
-   
-    
     
     CosmeticTickler = "[name='cosmeticForm'] > .tinyCopy";
     CompanySearchButton = "#image1"
@@ -23,7 +21,7 @@ class CDLogin{
 
     }
     goForCompany(){
-        cy.get(this.CompanySearch).click().type("NewTest Company");
+        cy.get(this.CompanySearch).click().type("KimmyTest007");
         cy.wait(200);
         cy.get(this.CompanySearchButton).click(); 
     }

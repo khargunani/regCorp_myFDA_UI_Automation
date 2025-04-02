@@ -5,14 +5,7 @@ const Locators = {
     emergencyContact: `a[data-uk-modal="{target:'#updateEmergencyContactInfoModal'}"]`,
     parentCompany: `a[data-uk-modal="{target:'#updateParentInfoModal'}"]`,
     activityConducted: `.uk-icon-small.uk-icon-edit.blue-title.uk-icon-hover.uk-margin-large-left.uk-float-right`,
-    nextButton: `button[class='uk-button uk-button-primary uk-form-width-medium']`,
-    selectDomainFromDD: "select[id='gm-host-select']",
-    editBtn: "span[title='Click to Edit']",
-    inputEmailAddr: "span[title='Click to Edit'] input",
-    emailAddrSetBtn: "span[title='Click to Edit'] button[class^='save button']",
-    emailList: "#email_list",
-    docNameInEmailContent: "div[class='email_body'] ul li",
-    hyperlinkListinEmailContent: "div[class='email'] a"
+    nextButton: `button[class='uk-button uk-button-primary uk-form-width-medium']`
 }
 
 const Texts = {
@@ -377,21 +370,6 @@ class FFAddRegistration {
                 expect(email.body).to.contain(Texts.EmailBody)
             })
         })
-    }
-
-    configureEmail(agreement)
-    {
-        cy.visit('https://www.guerrillamail.com/',{timeout:60000})              
-            cy.get(Locators.selectDomainFromDD).select('guerrillamail.biz').should('have.value','guerrillamail.biz')
-            cy.wait(1000)
-            cy.get(Locators.editBtn).click()
-            cy.wait(100)
-            cy.get(Locators.inputEmailAddr).clear().as('inputEmail')
-            cy.get('@inputEmail').type(agreement.email)
-            cy.wait(100)
-            cy.get(Locators.emailAddrSetBtn).click()        
-            cy.wait(2000)
-            cy.get(Locators.emailList).contains(agreement.EmailSubject).click();                          
     }
 
 }

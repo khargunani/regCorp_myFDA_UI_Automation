@@ -13,3 +13,31 @@
 [2025-02-26T09:55:24.347Z] TotalTime taken to SignUpUser: 18617ms
 [2025-02-26T10:51:33.397Z] TotalTime taken to SignUpUser: 37871ms
 [2025-02-26T10:53:40.879Z] TotalTime taken to SignUpUser: 22512ms
+[2025-03-04T10:33:42.083Z] Total time taken to Login and Create Inquiry: 93401ms
+[2025-03-07T10:47:18.919Z] TotalTime taken to SignUpUser: 28235ms
+[2025-03-07T10:47:41.552Z] TotalTime taken to SignUpUser: 53796ms
+[2025-03-07T10:54:23.935Z] TotalTime taken to SignUpUser: 20128ms
+[2025-03-07T13:26:27.425Z] TotalTime taken to SignUpUser: 14429ms
+[2025-03-07T13:33:17.415Z] TotalTime taken to SignUpUser: 23693ms
+[2025-03-07T13:33:37.668Z] TotalTime taken to SignUpUser: 45361ms
+[2025-03-07T13:39:55.291Z] TotalTime taken to SignUpUser: 18165ms
+[2025-03-07T13:44:03.533Z] TotalTime taken to SignUpUser: 40369ms
+[2025-03-07T13:46:42.147Z] TotalTime taken to SignUpUser: 18510ms
+[2025-03-07T14:37:32.742Z] TotalTime taken to SignUpUser: 24926ms
+[2025-03-07T14:38:16.440Z] TotalTime taken to SignUpUser: 20179ms
+[2025-03-07T14:38:36.140Z] TotalTime taken to SignUpUser: 39728ms
+[2025-03-07T14:43:20.471Z] TotalTime taken to SignUpUser: 36526ms
+[2025-03-07T14:45:06.129Z] TotalTime taken to SignUpUser: 14319ms
+[2025-03-12T10:48:57.088Z] TotalTime taken to LoginUser: 13674ms
+[2025-03-17T04:00:40.945Z] Total time taken to Login and Create Inquiry: 114056ms
+[2025-03-17T04:10:04.412Z] Total time taken to Login and Create Inquiry: 108539ms
+[2025-03-17T04:15:08.679Z] Total time taken to Login and Create Inquiry: 121457ms
+[2025-03-17T04:25:44.934Z] Total time taken to Login and Create Inquiry: 105962ms
+[2025-03-17T04:37:50.042Z] Total time taken to Login and Create Inquiry: 88930ms
+[2025-03-17T04:50:03.558Z] Total time taken to Login and Create Inquiry: 130834ms
+[2025-03-17T05:18:50.167Z] Total time taken to Login and Create Inquiry: 109413ms
+[2025-03-17T05:31:26.494Z] Total time taken to Login and Create Inquiry: 83098ms
+[2025-03-17T05:44:59.519Z] Total time taken to Login and Create Inquiry: 112429ms
+[2025-03-17T05:54:23.773Z] Total time taken to Login and Create Inquiry: 110886ms
+[2025-03-17T05:59:09.161Z] Total time taken to Login and Create Inquiry: 95300ms
+[2025-03-17T06:23:11.057Z] Total time taken to Login and Create Inquiry: 78423ms

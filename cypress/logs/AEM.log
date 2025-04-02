@@ -60,3 +60,146 @@
 [2025-02-26T10:50:44.235Z] Selecting block values
 [2025-02-26T10:50:44.572Z] Selecting payment mode i.e. Bankwire mode
 [2025-02-26T10:50:53.019Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T10:47:41.423Z] Verifing all block and its pricing
+[2025-03-07T10:54:23.567Z] Verified that cosmetic checkbox should be checked for AEM tickler
+[2025-03-07T12:07:02.818Z] Verifing AEM details are filled successfully
+[2025-03-07T12:07:05.514Z] Verifing checkbox status for payment
+[2025-03-07T12:09:20.156Z] Verifing AEM details are filled successfully
+[2025-03-07T12:09:22.649Z] Verifing checkbox status for payment
+[2025-03-07T12:09:55.110Z] Click on Adverse Event Management tickler
+[2025-03-07T12:09:55.385Z] Selecting block values
+[2025-03-07T12:09:55.456Z] Verifing pricing price
+[2025-03-07T12:10:00.632Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:10:02.316Z] Verifing invoice details for bankwire
+[2025-03-07T12:10:05.291Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:10:19.927Z] Verifing AEM details are filled successfully
+[2025-03-07T12:10:22.770Z] Verifing checkbox status for payment
+[2025-03-07T12:11:07.321Z] Click on Adverse Event Management tickler
+[2025-03-07T12:11:35.488Z] Click on Adverse Event Management tickler
+[2025-03-07T12:11:36.074Z] Selecting block values
+[2025-03-07T12:11:36.285Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:11:44.159Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:14:58.128Z] Verifing AEM details are filled successfully
+[2025-03-07T12:15:00.755Z] Verifing checkbox status for payment
+[2025-03-07T12:19:47.473Z] Verifing AEM details are filled successfully
+[2025-03-07T12:19:50.048Z] Verifing checkbox status for payment
+[2025-03-07T12:21:28.266Z] Verifing AEM details are filled successfully
+[2025-03-07T12:21:30.817Z] Verifing checkbox status for payment
+[2025-03-07T12:22:47.358Z] Verifing AEM details are filled successfully
+[2025-03-07T12:22:49.883Z] Verifing checkbox status for payment
+[2025-03-07T12:29:32.016Z] Verifing AEM details are filled successfully
+[2025-03-07T12:29:34.526Z] Verifing checkbox status for payment
+[2025-03-07T12:32:57.620Z] Verifing AEM details are filled successfully
+[2025-03-07T12:33:00.158Z] Verifing checkbox status for payment
+[2025-03-07T12:33:40.011Z] Click on Adverse Event Management tickler
+[2025-03-07T12:33:40.285Z] Selecting block values
+[2025-03-07T12:33:40.369Z] Verifing pricing price
+[2025-03-07T12:33:45.549Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:33:47.365Z] Verifing invoice details for bankwire
+[2025-03-07T12:33:50.322Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:34:04.250Z] Verifing AEM details are filled successfully
+[2025-03-07T12:34:07.117Z] Verifing checkbox status for payment
+[2025-03-07T12:34:44.706Z] Verifing AEM details are filled successfully
+[2025-03-07T12:34:47.335Z] Verifing checkbox status for payment
+[2025-03-07T12:35:10.650Z] Click on Adverse Event Management tickler
+[2025-03-07T12:35:10.933Z] Selecting block values
+[2025-03-07T12:35:10.999Z] Verifing pricing price
+[2025-03-07T12:35:16.200Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:35:16.938Z] Verifing invoice details for bankwire
+[2025-03-07T12:35:20.238Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:35:33.024Z] Verifing AEM details are filled successfully
+[2025-03-07T12:35:35.901Z] Verifing checkbox status for payment
+[2025-03-07T12:36:16.254Z] Click on Adverse Event Management tickler
+[2025-03-07T12:36:45.076Z] Click on Adverse Event Management tickler
+[2025-03-07T12:36:45.695Z] Selecting block values
+[2025-03-07T12:36:46.006Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:36:46.887Z] Verifing invoice details for bankwire
+[2025-03-07T12:36:50.509Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:39:14.737Z] Verifing AEM details are filled successfully
+[2025-03-07T12:39:17.398Z] Verifing checkbox status for payment
+[2025-03-07T12:39:43.268Z] Click on Adverse Event Management tickler
+[2025-03-07T12:39:43.543Z] Selecting block values
+[2025-03-07T12:39:43.617Z] Verifing pricing price
+[2025-03-07T12:39:48.789Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:39:49.988Z] Verifing invoice details for bankwire
+[2025-03-07T12:39:53.007Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:40:05.900Z] Verifing AEM details are filled successfully
+[2025-03-07T12:40:08.809Z] Verifing checkbox status for payment
+[2025-03-07T12:40:39.308Z] Click on Adverse Event Management tickler
+[2025-03-07T12:41:06.599Z] Click on Adverse Event Management tickler
+[2025-03-07T12:41:06.984Z] Selecting block values
+[2025-03-07T12:41:07.335Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:41:08.284Z] Verifing invoice details for bankwire
+[2025-03-07T12:41:11.756Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:43:02.145Z] Verifing AEM details are filled successfully
+[2025-03-07T12:43:04.899Z] Verifing checkbox status for payment
+[2025-03-07T12:43:28.522Z] Click on Adverse Event Management tickler
+[2025-03-07T12:43:28.810Z] Selecting block values
+[2025-03-07T12:43:28.879Z] Verifing pricing price
+[2025-03-07T12:43:34.078Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:43:35.035Z] Verifing invoice details for bankwire
+[2025-03-07T12:43:37.934Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:43:50.482Z] Verifing AEM details are filled successfully
+[2025-03-07T12:43:53.380Z] Verifing checkbox status for payment
+[2025-03-07T12:44:24.713Z] Click on Adverse Event Management tickler
+[2025-03-07T12:45:24.835Z] Click on Adverse Event Management tickler
+[2025-03-07T12:45:25.425Z] Selecting block values
+[2025-03-07T12:45:25.686Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T12:45:26.508Z] Verifing invoice details for bankwire
+[2025-03-07T12:45:29.941Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T12:58:36.323Z] Verifing AEM details are filled successfully
+[2025-03-07T12:58:39.198Z] Verifing checkbox status for payment
+[2025-03-07T13:07:24.835Z] Verifing AEM details are filled successfully
+[2025-03-07T13:07:27.464Z] Verifing checkbox status for payment
+[2025-03-07T13:07:59.949Z] Click on Adverse Event Management tickler
+[2025-03-07T13:08:00.270Z] Selecting block values
+[2025-03-07T13:08:00.354Z] Verifing pricing price
+[2025-03-07T13:08:05.578Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T13:08:06.901Z] Verifing invoice details for bankwire
+[2025-03-07T13:08:10.237Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T13:08:24.247Z] Verifing AEM details are filled successfully
+[2025-03-07T13:08:27.178Z] Verifing checkbox status for payment
+[2025-03-07T13:09:05.554Z] Click on Adverse Event Management tickler
+[2025-03-07T13:09:42.175Z] Click on Adverse Event Management tickler
+[2025-03-07T13:09:42.852Z] Selecting block values
+[2025-03-07T13:09:43.185Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T13:09:44.088Z] Verifing invoice details for bankwire
+[2025-03-07T13:09:47.809Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T13:31:07.516Z] Verifing AEM details are filled successfully
+[2025-03-07T13:31:10.218Z] Verifing checkbox status for payment
+[2025-03-07T13:31:42.994Z] Verifing AEM details are filled successfully
+[2025-03-07T13:31:45.525Z] Verifing checkbox status for payment
+[2025-03-07T13:33:37.622Z] Verifing all block and its pricing
+[2025-03-07T13:39:55.213Z] Verified that cosmetic checkbox should be checked for AEM tickler
+[2025-03-07T13:41:32.151Z] Verifing AEM details are filled successfully
+[2025-03-07T13:41:34.658Z] Verifing checkbox status for payment
+[2025-03-07T13:42:00.185Z] Click on Adverse Event Management tickler
+[2025-03-07T13:42:00.465Z] Selecting block values
+[2025-03-07T13:42:00.542Z] Verifing pricing price
+[2025-03-07T13:42:05.724Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T13:42:06.943Z] Verifing invoice details for bankwire
+[2025-03-07T13:42:09.978Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T13:42:22.272Z] Verifing AEM details are filled successfully
+[2025-03-07T13:42:25.107Z] Verifing checkbox status for payment
+[2025-03-07T13:43:01.389Z] Click on Adverse Event Management tickler
+[2025-03-07T13:43:41.144Z] Click on Adverse Event Management tickler
+[2025-03-07T13:43:41.788Z] Selecting block values
+[2025-03-07T13:43:42.042Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T13:43:49.668Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T14:37:32.687Z] Verified that cosmetic checkbox should be checked for AEM tickler
+[2025-03-07T14:38:36.078Z] Verifing all block and its pricing
+[2025-03-07T14:40:55.687Z] Verifing AEM details are filled successfully
+[2025-03-07T14:40:58.502Z] Verifing checkbox status for payment
+[2025-03-07T14:41:22.132Z] Click on Adverse Event Management tickler
+[2025-03-07T14:41:22.657Z] Selecting block values
+[2025-03-07T14:41:22.715Z] Verifing pricing price
+[2025-03-07T14:41:27.905Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T14:41:28.902Z] Verifing invoice details for bankwire
+[2025-03-07T14:41:31.844Z] Verifing payment is successfully done for bankwire mode
+[2025-03-07T14:41:45.523Z] Verifing AEM details are filled successfully
+[2025-03-07T14:41:48.393Z] Verifing checkbox status for payment
+[2025-03-07T14:42:27.720Z] Click on Adverse Event Management tickler
+[2025-03-07T14:42:58.929Z] Click on Adverse Event Management tickler
+[2025-03-07T14:42:59.642Z] Selecting block values
+[2025-03-07T14:42:59.964Z] Selecting payment mode i.e. Bankwire mode
+[2025-03-07T14:43:07.950Z] Verifing payment is successfully done for bankwire mode

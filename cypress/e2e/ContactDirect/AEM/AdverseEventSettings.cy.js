@@ -21,7 +21,7 @@ describe('Validate upload food facility certification process on myFDA', () => {
         
     })
 
-    it('Verify that user is able to upload the certificate on cd side', () => {
+    it('Verify AEM settings done on AEM portal those should refelct on CD side ', () => {
 
         AdverseEventSettingobj.verifyAEMSettings();
         cy.visit(Cypress.env('CDurl'), { failOnStatusCode: false });

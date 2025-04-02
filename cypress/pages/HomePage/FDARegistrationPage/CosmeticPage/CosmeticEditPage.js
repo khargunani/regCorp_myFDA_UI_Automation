@@ -7,7 +7,8 @@ import { should } from "chai";
 class CosmeticEdit{
 
     FDARegistartion = "#loginLanding > .uk-grid > .my-badge-target > .registrationRenew > a > .uk-overlay-panel"
-    CosmeticMenu = ".uk-navbar-nav > :nth-child(3) > a"
+    CosmeticMenu = "Cosmetic"
+    //CosmeticMenu = ".uk-navbar-nav > :nth-child(3) > a"
     EditButtonPhysical = ":nth-child(5) > fieldset > .uk-clearfix > .uk-icon-small"
     ComapnyNamePhysical = "#updatePhysicalAddressForm > :nth-child(5) > .uk-form-controls > .uk-form-width-medium"
     SaveNamePhysical = ":nth-child(14) > .uk-form-controls > .uk-button-primary"
@@ -29,7 +30,7 @@ class CosmeticEdit{
 
     goToCosmeticMenu(){
         cy.get(this.FDARegistartion).click();
-        cy.get(this.CosmeticMenu).click();
+        cy.contains(this.CosmeticMenu).click();
     }
 
     editPhysicalAddressSection(){

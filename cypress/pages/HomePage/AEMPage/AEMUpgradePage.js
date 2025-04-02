@@ -106,16 +106,16 @@ class AEMUpgrade {
     configureEmail(Input)
     {
         cy.visit('https://www.guerrillamail.com/',{timeout:60000})              
-            cy.get(Locator.selectDomainFromDD).select('guerrillamail.biz').should('have.value','guerrillamail.biz')
+            cy.get(Locators.selectDomainFromDD).select('guerrillamail.biz').should('have.value','guerrillamail.biz')
             cy.wait(1000)
-            cy.get(Locator.editBtn).click()
+            cy.get(Locators.editBtn).click()
             cy.wait(100)
-            cy.get(Locator.inputEmailAddr).clear().as('inputEmail')
+            cy.get(Locators.inputEmailAddr).clear().as('inputEmail')
             cy.get('@inputEmail').type(Input.tempEmail)
             cy.wait(100)
-            cy.get(Locator.emailAddrSetBtn).click()        
+            cy.get(Locators.emailAddrSetBtn).click()        
             cy.wait(2000)
-            cy.get(Locator.emailList).contains(Input.EmailSubject).click();                          
+            cy.get(Locators.emailList).contains(Input.EmailSubject).click();                          
     }
 
     verifyNotepadIsUpdated(NotepadInfo,BlockPrice) {

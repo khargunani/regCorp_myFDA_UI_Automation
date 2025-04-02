@@ -3,7 +3,7 @@ import HomePage from "../../../pages/ContactDirect/Home/Home/SearchCompanyPage";
 import AEMDetails from "../../../pages/ContactDirect/AEM/AEMDetailsPage"
 
 
-describe('Validate upload food facility certification process on myFDA', () => {
+describe('Validate AEM Configuartion and block pricing for version 2 on CD side', () => {
 
     const startTime = Date.now();
     const AEMDEtailsObj = new AEMDetails();

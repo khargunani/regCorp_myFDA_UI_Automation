@@ -14,6 +14,9 @@ const Locators = {
     SelectInquiryType: `Renewal: US Reg Service`,
     SelectInquiryType2: `Renewal: US Reg Service 2 year`,
     SelectInquiryType3: `Renewal: US Reg Service 3 year`,
+    SelectRegProInquiryType: 'RC Professional Food 1 year',
+    SelectRegProInquiryType2: 'RC Professional Food 2 year',
+    SelectRegProInquiryType3: 'RC Professional Food 3 year',
     InquiryManagementLink: `Inquiry Management`,
     InquiryStage: `#inqStage`,
     Submit: `Submit`,
@@ -72,6 +75,120 @@ class CreateInquiry {
         cy.contains(Locators.Submit).click();
     }
 
+    createInquiryNonUS() {
+        cy.contains(Locators.InquiryTab).click();
+        cy.contains(Locators.AddInquiryLink).invoke("removeAttr", "target").click();
+        cy.get(Locators.SelectInquiry).select(BTAInquiry.Type);
+        cy.get(Locators.SubInquiryClick).click();
+
+        cy.get(Locators.SelectsubInquiry).each(($ele) => {
+            cy.log($ele.text());
+            if ($ele.text() === BTAInquiry.SubType) {
+                cy.wrap($ele).click();
+            }
+        });
+        cy.get(Locators.SelectContact).select(BTAInquiry.Contact);
+        cy.get(Locators.SelectStage).select(BTAInquiry.Stage);
+        cy.get(Locators.SelectRepPlaceholder).select(BTAInquiry.RepPlaceholder);
+        cy.contains(Locators.Submit).click();
+    }
+
+    verifyAutoInquiryForRegPro(){
+        cy.contains(Locators.InquiryTab).click();
+        cy.wait(10000);
+        cy.contains(Locators.SelectRegProInquiryType).then((newTab) => {
+            const hrefTab = newTab.prop('href');
+            cy.visit(hrefTab);
+            cy.contains(Locators.InquiryManagementLink).click();
+            let expectedStage = 'Closed-Pending-Payment';
+            cy.get(Locators.InquiryStage).should('have.value', expectedStage);
+            cy.get(Locators.DeleteButton).click();
+            cy.window().then(() => {
+                cy.get(Locators.YesButton).click({ force: true });
+            })
+        })
+    }
+
+        verifyAutoInquiryForRegPro2(){
+            cy.contains(Locators.InquiryTab).click();
+            cy.wait(10000);
+            cy.contains(Locators.SelectRegProInquiryType2).then((newTab) => {
+                const hrefTab = newTab.prop('href');
+                cy.visit(hrefTab);
+                cy.contains(Locators.InquiryManagementLink).click();
+                let expectedStage = 'Closed-Pending-Payment';
+                cy.get(Locators.InquiryStage).should('have.value', expectedStage);
+                cy.get(Locators.DeleteButton).click();
+                cy.window().then(() => {
+                    cy.get(Locators.YesButton).click({ force: true });
+                })
+            })
+        }
+
+            verifyAutoInquiryForRegPro3(){
+                cy.contains(Locators.InquiryTab).click();
+                cy.wait(10000);
+                cy.contains(Locators.SelectRegProInquiryType3).then((newTab) => {
+                    const hrefTab = newTab.prop('href');
+                    cy.visit(hrefTab);
+                    cy.contains(Locators.InquiryManagementLink).click();
+                    let expectedStage = 'Closed-Pending-Payment';
+                    cy.get(Locators.InquiryStage).should('have.value', expectedStage);
+                    cy.get(Locators.DeleteButton).click();
+                    cy.window().then(() => {
+                        cy.get(Locators.YesButton).click({ force: true });
+                    })
+                })
+            }
+
+            verifyAutoInquiryForRegProOnline(){
+                cy.contains(Locators.InquiryTab).click();
+                cy.wait(10000);
+                cy.contains(Locators.SelectRegProInquiryType).then((newTab) => {
+                    const hrefTab = newTab.prop('href');
+                    cy.visit(hrefTab);
+                    cy.contains(Locators.InquiryManagementLink).click();
+                    let expectedStage = 'Closed-Won';
+                    cy.get(Locators.InquiryStage).should('have.value', expectedStage);
+                    cy.get(Locators.DeleteButton).click();
+                    cy.window().then(() => {
+                        cy.get(Locators.YesButton).click({ force: true });
+                    })
+                })
+            }
+
+            verifyAutoInquiryForRegPro2Online(){
+                cy.contains(Locators.InquiryTab).click();
+                cy.wait(10000);
+                cy.contains(Locators.SelectRegProInquiryType2).then((newTab) => {
+                    const hrefTab = newTab.prop('href');
+                    cy.visit(hrefTab);
+                    cy.contains(Locators.InquiryManagementLink).click();
+                    let expectedStage = 'Closed-Won';
+                    cy.get(Locators.InquiryStage).should('have.value', expectedStage);
+                    cy.get(Locators.DeleteButton).click();
+                    cy.window().then(() => {
+                        cy.get(Locators.YesButton).click({ force: true });
+                    })
+                })
+            }
+
+            verifyAutoInquiryForRegPro3Online(){
+                cy.contains(Locators.InquiryTab).click();
+                cy.wait(10000);
+                cy.contains(Locators.SelectRegProInquiryType3).then((newTab) => {
+                    const hrefTab = newTab.prop('href');
+                    cy.visit(hrefTab);
+                    cy.contains(Locators.InquiryManagementLink).click();
+                    let expectedStage = 'Closed-Won';
+                    cy.get(Locators.InquiryStage).should('have.value', expectedStage);
+                    cy.get(Locators.DeleteButton).click();
+                    cy.window().then(() => {
+                        cy.get(Locators.YesButton).click({ force: true });
+                    })
+                })
+            }
+
     verifyInquiryIsUpdated() {
         cy.contains(Locators.InquiryTab).click();
         cy.wait(10000);
@@ -88,7 +205,7 @@ class CreateInquiry {
                 cy.get(Locators.YesButton).click({ force: true });
             })
         });
-        cy.go('back');
+       // cy.go('back');
     }
 
     openInquiryTabFor2Year() {
@@ -143,7 +260,7 @@ class CreateInquiry {
                 cy.get(Locators.YesButton).click({ force: true });
             })
         });
-        cy.go('back');
+        //cy.go('back');
     }
 
     openInquiryTabFor3Year() {
@@ -198,7 +315,7 @@ class CreateInquiry {
                 cy.get(Locators.YesButton).click({ force: true });
             })
         });
-        cy.go('back');
+        //cy.go('back');
     }
 
     verifyInquiryIsUpdatedForOnlinePayment1Year() {
@@ -217,7 +334,7 @@ class CreateInquiry {
                 cy.get(Locators.YesButton).click({ force: true });
             })
         });
-        cy.go('back');
+       // cy.go('back');
     }
 
     verifyInquiryIsUpdatedForOnlinePayment2Year() {
@@ -236,7 +353,7 @@ class CreateInquiry {
                 cy.get(Locators.YesButton).click({ force: true });
             })
         });
-        cy.go('back');
+       // cy.go('back');
     }
 
     verifyInquiryIsUpdatedForOnlinePayment3Year() {
@@ -255,7 +372,7 @@ class CreateInquiry {
                 cy.get(Locators.YesButton).click({ force: true });
             })
         });
-        cy.go('back');
+        //cy.go('back');
     }
 
     verifyCheckboxForUncheckPayment() {

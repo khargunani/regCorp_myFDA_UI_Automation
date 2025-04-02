@@ -1,0 +1,11 @@
+{
+    "US": {
+        "desiredUserId": "KimPossible",
+        "emailAddress": "AutomationSub123@gmail.com",
+        "contactName": "Automation Sub User",
+        "jobTitle": "Junior QA",
+        "password": "KimPossible",
+        "confirmPassword": "KimPossible"
+    }
+
+}

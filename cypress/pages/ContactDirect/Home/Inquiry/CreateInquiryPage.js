@@ -46,7 +46,7 @@ class CreateInquiry{
                 cy.wrap($ele).click();
             }
         })
-        cy.get(this.SelectContact).select("Priyanka Pathak(Main)");
+        cy.get(this.SelectContact).select("Prachi Lonkar");
         cy.get(this.SelectSalesRep).select("Atal Pandey");
         cy.get(this.SelectStage).select("In Queue")
         cy.contains('Submit').click();

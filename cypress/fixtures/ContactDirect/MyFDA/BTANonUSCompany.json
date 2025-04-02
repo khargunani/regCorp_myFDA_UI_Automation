@@ -1,0 +1,11 @@
+{
+    "NonUS": {
+        "desiredUserId": "MCWH2018",
+        "emailAddress": "AutomationSub123@gmail.com",
+        "contactName": "Automation Sub User",
+        "jobTitle": "Junior QA",
+        "password": "MCWH2018",
+        "confirmPassword": "MCWH2018"
+    }
+
+}

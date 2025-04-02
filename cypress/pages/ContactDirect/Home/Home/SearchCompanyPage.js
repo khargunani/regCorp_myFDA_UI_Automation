@@ -6,7 +6,19 @@ class HomePage{
 
 
     goForCompany(){
-        cy.get(this.CompanySearch).click().type("Automation Test");
+        cy.get(this.CompanySearch).click().type("AutomationTest");
+        cy.wait(200);
+        cy.get(this.CompanySearchButton).click(); 
+    }
+
+    goForUSCompany(){
+        cy.get(this.CompanySearch).click().type("KimmyTest007");
+        cy.wait(200);
+        cy.get(this.CompanySearchButton).click(); 
+    }
+
+    goForNonUSCompany(){
+        cy.get(this.CompanySearch).click().type("US Test Company Kim 2");
         cy.wait(200);
         cy.get(this.CompanySearchButton).click(); 
     }

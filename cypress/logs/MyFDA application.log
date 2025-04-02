@@ -81,3 +81,250 @@
 [2025-02-26T10:50:54.508Z] Login out from myfda for Automation Test user
 [2025-02-26T10:52:21.832Z] MyFDA Launched Application-->Login Test
 [2025-02-26T10:53:40.793Z] Configure setting details on AEM portal and verifying on CD side
+[2025-03-04T05:38:00.849Z] MyFDA Launched Application-->Login Test
+[2025-03-04T05:39:41.366Z] MyFDA Launched Application-->Login Test
+[2025-03-04T05:42:09.402Z] MyFDA Launched Application-->Login Test
+[2025-03-04T05:43:10.547Z] MyFDA Launched Application-->Login Test
+[2025-03-04T05:43:36.036Z] 1 year Payment
+[2025-03-04T05:43:38.839Z] Details for check payment
+[2025-03-04T05:44:29.489Z] MyFDA Launched Application-->Login Test
+[2025-03-04T05:54:14.503Z] MyFDA Launched Application-->Login Test
+[2025-03-04T05:55:14.834Z] MyFDA Launched Application-->Login Test
+[2025-03-04T05:55:37.032Z] 1 year Payment
+[2025-03-04T05:55:39.180Z] Details for check payment
+[2025-03-04T06:19:18.972Z] MyFDA Launched Application-->Login Test
+[2025-03-04T06:20:49.920Z] MyFDA Launched Application-->Login Test
+[2025-03-04T06:22:23.583Z] MyFDA Launched Application-->Login Test
+[2025-03-04T06:23:57.254Z] MyFDA Launched Application-->Login Test
+[2025-03-04T06:25:35.275Z] MyFDA Launched Application-->Login Test
+[2025-03-04T06:27:18.335Z] MyFDA Launched Application-->Login Test
+[2025-03-04T07:54:40.776Z] MyFDA Launched Application-->Login Test
+[2025-03-04T08:08:26.757Z] MyFDA Launched Application-->Login Test
+[2025-03-04T09:14:28.662Z] MyFDA Launched Application-->Login Test
+[2025-03-04T09:22:45.599Z] MyFDA Launched Application-->Login Test
+[2025-03-04T09:23:37.677Z] 1 year Payment
+[2025-03-04T09:23:58.449Z] Details for online payment
+[2025-03-04T09:24:00.093Z] Logout successfully
+[2025-03-04T10:31:56.205Z] MyFDA Launched Application-->Login Test
+[2025-03-04T10:32:26.703Z] 1 year Payment
+[2025-03-04T10:32:29.474Z] Details for check payment
+[2025-03-04T10:32:34.845Z] Verifying invoice details for Bankwire
+[2025-03-04T10:32:36.262Z] Logout successfully
+[2025-03-05T05:21:54.022Z] MyFDA Launched Application-->Login Test
+[2025-03-05T05:22:24.672Z] 1 year Payment
+[2025-03-05T05:22:45.423Z] Details for online payment
+[2025-03-05T05:22:47.290Z] Logout successfully
+[2025-03-05T07:02:55.217Z] MyFDA Launched Application-->Login Test
+[2025-03-05T07:04:24.305Z] MyFDA Launched Application-->Login Test
+[2025-03-05T07:05:57.267Z] MyFDA Launched Application-->Login Test
+[2025-03-05T07:07:33.100Z] MyFDA Launched Application-->Login Test
+[2025-03-05T07:09:12.475Z] MyFDA Launched Application-->Login Test
+[2025-03-05T07:10:55.686Z] MyFDA Launched Application-->Login Test
+[2025-03-05T10:43:21.116Z] MyFDA Launched Application-->Login Test
+[2025-03-05T10:43:51.694Z] 1 year Payment
+[2025-03-05T10:43:55.110Z] Details for check payment
+[2025-03-05T10:44:48.704Z] MyFDA Launched Application-->Login Test
+[2025-03-05T10:53:28.276Z] MyFDA Launched Application-->Login Test
+[2025-03-05T10:56:38.168Z] MyFDA Launched Application-->Login Test
+[2025-03-05T10:57:01.558Z] 1 year Payment
+[2025-03-05T10:57:04.099Z] Details for check payment
+[2025-03-05T11:04:59.903Z] MyFDA Launched Application-->Login Test
+[2025-03-05T11:05:22.449Z] 1 year Payment
+[2025-03-05T11:05:25.108Z] Details for check payment
+[2025-03-05T11:05:29.825Z] Verifying invoice details for Bankwire
+[2025-03-05T11:05:31.647Z] Logout successfully
+[2025-03-05T11:21:13.255Z] MyFDA Launched Application-->Login Test
+[2025-03-05T11:21:35.046Z] 1 year Payment
+[2025-03-05T11:21:37.626Z] Details for check payment
+[2025-03-05T11:25:43.705Z] MyFDA Launched Application-->Login Test
+[2025-03-05T11:35:14.848Z] MyFDA Launched Application-->Login Test
+[2025-03-05T11:35:36.373Z] 1 year Payment
+[2025-03-05T11:35:38.861Z] Details for check payment
+[2025-03-05T11:35:43.358Z] Verifying invoice details for Bankwire
+[2025-03-05T11:35:44.563Z] Logout successfully
+[2025-03-05T12:01:48.056Z] MyFDA Launched Application-->Login Test
+[2025-03-05T12:02:15.659Z] 1 year Payment
+[2025-03-05T12:02:18.492Z] Details for check payment
+[2025-03-05T12:52:42.142Z] MyFDA Launched Application-->Login Test
+[2025-03-05T12:54:13.394Z] MyFDA Launched Application-->Login Test
+[2025-03-05T12:54:34.443Z] 1 year Payment
+[2025-03-05T12:54:36.722Z] Details for check payment
+[2025-03-05T13:22:28.099Z] MyFDA Launched Application-->Login Test
+[2025-03-05T13:24:58.753Z] MyFDA Launched Application-->Login Test
+[2025-03-05T13:26:04.059Z] 1 year Payment
+[2025-03-05T13:26:06.498Z] Details for check payment
+[2025-03-05T13:38:03.091Z] MyFDA Launched Application-->Login Test
+[2025-03-05T13:38:42.018Z] 1 year Payment
+[2025-03-05T13:38:44.297Z] Details for check payment
+[2025-03-05T13:38:49.315Z] Verifying invoice details for Bankwire
+[2025-03-05T13:38:51.020Z] Logout successfully
+[2025-03-06T05:52:43.972Z] MyFDA Launched Application-->Login Test
+[2025-03-06T05:53:09.016Z] 1 year Payment
+[2025-03-06T05:53:11.618Z] Details for check payment
+[2025-03-06T05:53:16.576Z] Verifying invoice details for Bankwire
+[2025-03-06T05:53:18.309Z] Logout successfully
+[2025-03-06T06:21:15.670Z] MyFDA Launched Application-->Login Test
+[2025-03-06T06:21:41.748Z] 1 year Payment
+[2025-03-06T06:21:44.695Z] Details for check payment
+[2025-03-06T06:21:50.226Z] Verifying invoice details for Bankwire
+[2025-03-06T06:21:51.677Z] Logout successfully
+[2025-03-06T10:52:28.111Z] MyFDA Launched Application-->Login Test
+[2025-03-06T10:52:54.193Z] 1 year Payment
+[2025-03-06T10:52:56.802Z] Details for check payment
+[2025-03-06T10:53:02.801Z] Verifying invoice details for Bankwire
+[2025-03-06T10:53:04.332Z] Logout successfully
+[2025-03-06T11:11:05.966Z] MyFDA Launched Application-->Login Test
+[2025-03-06T11:22:02.373Z] MyFDA Launched Application-->Login Test
+[2025-03-06T11:22:23.901Z] 1 year Payment
+[2025-03-06T11:22:26.173Z] Details for check payment
+[2025-03-06T11:22:44.349Z] Verifying invoice details for Bankwire
+[2025-03-06T11:22:46.382Z] Logout successfully
+[2025-03-07T06:12:40.581Z] MyFDA Launched Application-->Login Test
+[2025-03-07T06:13:08.165Z] 1 year Payment
+[2025-03-07T06:13:22.988Z] Details for online payment
+[2025-03-07T06:13:24.418Z] Logout successfully
+[2025-03-07T07:56:37.973Z] MyFDA Launched Application-->Login Test
+[2025-03-07T07:57:38.081Z] MyFDA Launched Application-->Login Test
+[2025-03-07T08:05:02.500Z] MyFDA Launched Application-->Login Test
+[2025-03-07T08:09:07.315Z] MyFDA Launched Application-->Login Test
+[2025-03-07T11:00:58.379Z] MyFDA Launched Application-->Login Test
+[2025-03-07T11:01:16.966Z] Validated success Login Msg-->Login Test
+[2025-03-07T11:01:17.003Z] Verifying the blocks and its price showing correctly
+[2025-03-07T11:02:18.711Z] MyFDA Launched Application-->Login Test
+[2025-03-07T11:02:33.300Z] Validated success Login Msg-->Login Test
+[2025-03-07T11:02:33.616Z] Verifying the blocks and its price showing correctly
+[2025-03-07T12:02:11.922Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:02:32.432Z] Validated success Login Msg-->Login Test
+[2025-03-07T12:02:32.470Z] Verifying the blocks and its price showing correctly
+[2025-03-07T12:03:01.688Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:05:53.944Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:06:10.073Z] Validated success Login Msg-->Login Test
+[2025-03-07T12:06:10.332Z] Verifying the blocks and its price showing correctly
+[2025-03-07T12:07:14.403Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:09:28.855Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:10:28.644Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:11:45.590Z] Login out from myfda for Automation Test user
+[2025-03-07T12:15:08.698Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:19:56.266Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:21:37.049Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:22:56.263Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:29:40.535Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:33:11.806Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:34:10.627Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:34:51.728Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:35:39.684Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:36:51.973Z] Login out from myfda for Automation Test user
+[2025-03-07T12:39:23.023Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:40:13.112Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:41:13.205Z] Login out from myfda for Automation Test user
+[2025-03-07T12:43:09.522Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:43:58.201Z] MyFDA Launched Application-->Login Test
+[2025-03-07T12:45:31.622Z] Login out from myfda for Automation Test user
+[2025-03-07T12:58:45.092Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:01:57.528Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:02:56.250Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:03:09.777Z] Validated success Login Msg-->Login Test
+[2025-03-07T13:03:10.116Z] Verifying the landing page
+[2025-03-07T13:03:14.758Z] selecting block value
+[2025-03-07T13:03:15.043Z] selecting block pricing
+[2025-03-07T13:03:20.120Z] selecting payment mode as bankwire
+[2025-03-07T13:03:20.272Z] verifying invoice details for bankwire
+[2025-03-07T13:03:21.093Z] Verifying payment by bankwire mode
+[2025-03-07T13:03:24.150Z] Verifying email triggered after payment complete
+[2025-03-07T13:06:04.385Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:06:50.369Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:07:33.263Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:08:31.262Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:09:49.422Z] Login out from myfda for Automation Test user
+[2025-03-07T13:24:31.809Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:24:50.793Z] Validated success Login Msg-->Login Test
+[2025-03-07T13:24:50.820Z] Verifying the blocks and its price showing correctly
+[2025-03-07T13:25:21.868Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:26:27.342Z] Configure setting details on AEM portal and verifying on CD side
+[2025-03-07T13:31:14.243Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:31:49.567Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:40:28.825Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:40:45.400Z] Validated success Login Msg-->Login Test
+[2025-03-07T13:40:45.453Z] Verifying the blocks and its price showing correctly
+[2025-03-07T13:41:38.852Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:42:28.674Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:43:50.996Z] Login out from myfda for Automation Test user
+[2025-03-07T13:45:26.815Z] MyFDA Launched Application-->Login Test
+[2025-03-07T13:46:42.042Z] Configure setting details on AEM portal and verifying on CD side
+[2025-03-07T13:56:06.135Z] MyFDA Launched Application-->Login Test
+[2025-03-07T14:39:40.758Z] MyFDA Launched Application-->Login Test
+[2025-03-07T14:40:03.000Z] Validated success Login Msg-->Login Test
+[2025-03-07T14:40:03.037Z] Verifying the blocks and its price showing correctly
+[2025-03-07T14:41:02.848Z] MyFDA Launched Application-->Login Test
+[2025-03-07T14:41:52.219Z] MyFDA Launched Application-->Login Test
+[2025-03-07T14:43:09.318Z] Login out from myfda for Automation Test user
+[2025-03-07T14:43:57.726Z] MyFDA Launched Application-->Login Test
+[2025-03-07T14:45:06.018Z] Configure setting details on AEM portal and verifying on CD side
+[2025-03-10T06:38:50.346Z] MyFDA Launched Application-->Login Test
+[2025-03-10T06:51:13.191Z] MyFDA Launched Application-->Login Test
+[2025-03-10T06:52:54.016Z] MyFDA Launched Application-->Login Test
+[2025-03-10T06:53:19.972Z] 1 year Payment
+[2025-03-10T06:53:37.026Z] Details for online payment
+[2025-03-10T06:53:38.367Z] Logout successfully
+[2025-03-10T08:04:55.027Z] MyFDA Launched Application-->Login Test
+[2025-03-10T08:10:55.376Z] MyFDA Launched Application-->Login Test
+[2025-03-10T08:14:52.274Z] MyFDA Launched Application-->Login Test
+[2025-03-10T11:14:33.715Z] MyFDA Launched Application-->Login Test
+[2025-03-10T11:14:59.245Z] 1 year Payment
+[2025-03-17T03:57:54.311Z] MyFDA Launched Application-->Login Test
+[2025-03-17T03:58:34.634Z] 1 year Payment
+[2025-03-17T03:58:38.459Z] Details for check payment
+[2025-03-17T03:58:48.854Z] Verifying invoice details for Bankwire
+[2025-03-17T03:58:51.246Z] Logout successfully
+[2025-03-17T04:07:25.789Z] MyFDA Launched Application-->Login Test
+[2025-03-17T04:08:00.404Z] 1 year Payment
+[2025-03-17T04:08:30.362Z] Details for online payment
+[2025-03-17T04:08:33.208Z] Logout successfully
+[2025-03-17T04:12:23.052Z] MyFDA Launched Application-->Login Test
+[2025-03-17T04:13:12.636Z] 1 year Payment
+[2025-03-17T04:13:36.863Z] Details for online payment
+[2025-03-17T04:13:39.568Z] Logout successfully
+[2025-03-17T04:23:22.806Z] MyFDA Launched Application-->Login Test
+[2025-03-17T04:23:55.193Z] 1 year Payment
+[2025-03-17T04:24:15.593Z] Details for online payment
+[2025-03-17T04:24:18.628Z] Logout successfully
+[2025-03-17T04:35:17.376Z] MyFDA Launched Application-->Login Test
+[2025-03-17T04:35:48.875Z] 1 year Payment
+[2025-03-17T04:36:09.538Z] Details for online payment
+[2025-03-17T04:36:12.392Z] Logout successfully
+[2025-03-17T04:47:04.313Z] MyFDA Launched Application-->Login Test
+[2025-03-17T04:47:39.640Z] 1 year Payment
+[2025-03-17T04:48:10.702Z] Details for online payment
+[2025-03-17T04:48:15.364Z] Logout successfully
+[2025-03-17T05:16:09.701Z] MyFDA Launched Application-->Login Test
+[2025-03-17T05:16:43.663Z] 1 year Payment
+[2025-03-17T05:17:06.539Z] Details for online payment
+[2025-03-17T05:17:09.998Z] Logout successfully
+[2025-03-17T05:28:51.747Z] MyFDA Launched Application-->Login Test
+[2025-03-17T05:29:21.532Z] 1 year Payment
+[2025-03-17T05:29:40.208Z] Details for online payment
+[2025-03-17T05:29:42.636Z] Logout successfully
+[2025-03-17T05:42:19.725Z] MyFDA Launched Application-->Login Test
+[2025-03-17T05:42:53.052Z] 1 year Payment
+[2025-03-17T05:43:19.886Z] Details for online payment
+[2025-03-17T05:43:22.174Z] Logout successfully
+[2025-03-17T05:50:51.483Z] MyFDA Launched Application-->Login Test
+[2025-03-17T05:51:46.546Z] 1 year Payment
+[2025-03-17T05:52:08.075Z] Details for online payment
+[2025-03-17T05:52:13.959Z] Logout successfully
+[2025-03-17T05:56:04.834Z] MyFDA Launched Application-->Login Test
+[2025-03-17T05:56:44.483Z] 1 year Payment
+[2025-03-17T05:56:52.784Z] Details for check payment
+[2025-03-17T05:57:04.189Z] Verifying invoice details for Bankwire
+[2025-03-17T05:57:08.293Z] Logout successfully
+[2025-03-17T06:00:23.331Z] MyFDA Launched Application-->Login Test
+[2025-03-17T06:14:56.052Z] MyFDA Launched Application-->Login Test
+[2025-03-17T06:15:27.379Z] 1 year Payment
+[2025-03-17T06:15:30.743Z] Details for check payment
+[2025-03-17T06:15:35.905Z] Verifying invoice details for Bankwire
+[2025-03-17T06:15:38.131Z] Logout successfully
+[2025-03-17T06:20:34.582Z] MyFDA Launched Application-->Login Test
+[2025-03-17T06:21:03.831Z] 1 year Payment
+[2025-03-17T06:21:08.764Z] Details for check payment
+[2025-03-17T06:21:14.035Z] Verifying invoice details for Bankwire
+[2025-03-17T06:21:16.396Z] Logout successfully

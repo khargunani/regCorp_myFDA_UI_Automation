@@ -27,7 +27,7 @@ describe('Validate AEM purchase scenarios from myFDA to CD side ', () => {
         AEMPurchaseobj.verifyLandingPage();
     })
 
-    it.only('Verify the Payment page, the amount should get change as per the block size', ()=>{
+    it.only('Verify the Payment page, the amount should get change as per the block size on myDA side', ()=>{
         cy.logger('MyFDA application', "Verifying the blocks and its price showing correctly");
         AEMPurchaseobj.verifyLandingPage();
         AEMPurchaseobj.verifyAllBlockPricing();

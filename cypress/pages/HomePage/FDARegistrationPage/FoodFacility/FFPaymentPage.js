@@ -29,14 +29,7 @@ const Locators = {
     Agreement: `#checkForm > .uk-margin-bottom > .agreeTermsDiv > input`,
     UndersignName: `input[name='undersignedName']`,
     UndersignTitle: `#checkForm > .uk-margin-bottom > :nth-child(6) > .uk-form-controls > .uk-form-width-medium`,
-    UndersignEmail: `#checkForm > .uk-margin-bottom > :nth-child(7) > .uk-form-controls > .uk-form-width-medium`,
-    selectDomainFromDD: "select[id='gm-host-select']",
-    editBtn: "span[title='Click to Edit']",
-    inputEmailAddr: "span[title='Click to Edit'] input",
-    emailAddrSetBtn: "span[title='Click to Edit'] button[class^='save button']",
-    emailList: "#email_list",
-    docNameInEmailContent: "div[class='email_body'] ul li",
-    hyperlinkListinEmailContent: "div[class='email'] a"
+    UndersignEmail: `#checkForm > .uk-margin-bottom > :nth-child(7) > .uk-form-controls > .uk-form-width-medium`
 }
 
 const Texts = {
@@ -168,7 +161,7 @@ class FFPayment {
 
     verifyInvoiceDetailsForBankWire() {
         cy.get(Locators.ViewInvoice).should('be.visible').click();
-        cy.task('readPdf', 'cypress/downloads/Invoice_for_KimPossible_(676545).pdf').then((data) => {
+        cy.task('readPdf', 'cypress/downloads/Invoice_for_KimPossible_().pdf').then((data) => {
             cy.log(data.text)
             cy.log(this.txt);
             expect(data.text).to.contain(this.txt);
@@ -188,20 +181,6 @@ class FFPayment {
         })
     }
 
-    configureEmail(PaymentDetails) {
-        cy.visit('https://www.guerrillamail.com/', { timeout: 60000 })
-        cy.get(Locators.selectDomainFromDD).select('guerrillamail.biz').should('have.value', 'guerrillamail.biz')
-        cy.wait(1000)
-        cy.get(Locators.editBtn).click()
-        cy.wait(100)
-        cy.get(Locators.inputEmailAddr).clear().as('inputEmail')
-        cy.get('@inputEmail').type(PaymentDetails.emailid)
-        cy.wait(100)
-        cy.get(Locators.emailAddrSetBtn).click()
-        cy.wait(2000)
-        cy.get(Locators.emailList).contains(PaymentDetails.EmailSubject).click();
-    }
-
     verifyEmailOnOnlinePayment(Inboxid) {
         cy.then(() => {
             cy.wrap(mailslurp).as('mailslurp')
@@ -211,6 +190,20 @@ class FFPayment {
                 expect(email.subject).to.contain(Texts.EmailBody);
             })
         })
+    }
+
+    configureEmail(PaymentDetails) {
+        cy.visit('https://www.guerrillamail.com/', { timeout: 60000 })
+        cy.get(Locators.selectDomainFromDD).select('guerrillamail.com').should('have.value', 'guerrillamail.com')
+        cy.wait(1000)
+        cy.get(Locators.editBtn).click()
+        cy.wait(100)
+        cy.get(Locators.inputEmailAddr).clear().as('inputEmail')
+        cy.get('@inputEmail').type(PaymentDetails.emailid)
+        cy.wait(100)
+        cy.get(Locators.emailAddrSetBtn).click()
+        cy.wait(2000)
+        cy.get(Locators.emailList).contains(PaymentDetails.EmailSubject).click();
     }
 }
 
