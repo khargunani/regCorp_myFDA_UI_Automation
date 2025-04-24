@@ -4,10 +4,13 @@ orbs:
 workflows:
   use-my-orb:
     jobs:
+      - browser-tools/install-browser-tools:
+          version: "latest"
+          install-firefox: true
+          install-geckodriver: true
       - cypress/run:
           cypress-command: npx cypress run --browser chrome --headed --spec cypress\e2e\Home\FDA_Registarion\FoodFacility\FFViewCeritificates.cy.js 
                            node ./scripts/zipScript.js
-          install-browsers: true
           post-steps:
               - run: ls
               - store_artifacts:
