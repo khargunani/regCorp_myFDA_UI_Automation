@@ -1,30 +1,43 @@
-class HomePage{
+class HomePage {
 
     CompanySearchButton = "#image1"
     CompanySearch = "[colspan='3'] > table > tbody > tr > :nth-child(2) > .tinyCopy"
     ReturnToCompany = "Return to Company"
 
 
-    goForCompany(){
-        cy.get(this.CompanySearch).click().type("AutomationTest");
+    goForCompany() {
+        cy.get(this.CompanySearch).click().type("Registrar Corp");
         cy.wait(200);
-        cy.get(this.CompanySearchButton).click(); 
+        cy.get(this.CompanySearchButton).click();
     }
 
-    goForUSCompany(){
+    goForUSCompany() {
         cy.get(this.CompanySearch).click().type("KimmyTest007");
         cy.wait(200);
-        cy.get(this.CompanySearchButton).click(); 
+        cy.get(this.CompanySearchButton).click();
     }
 
-    goForNonUSCompany(){
+    goForNonUSCompany() {
         cy.get(this.CompanySearch).click().type("US Test Company Kim 2");
         cy.wait(200);
-        cy.get(this.CompanySearchButton).click(); 
+        cy.get(this.CompanySearchButton).click();
     }
 
-    returnToCompany(){
+    goForCosmeticCompany() {
+        cy.get(this.CompanySearch).click().type("DemoTest");
+        cy.wait(200);
+        cy.get(this.CompanySearchButton).click();
+    }
+
+    goForOnlineTraining(){
+        cy.get(this.CompanySearch).click().type("Automation1");
+        cy.wait(200);
+        cy.get(this.CompanySearchButton).click();
+
+    }
+
+    returnToCompany() {
         cy.contains(this.ReturnToCompany).click();
     }
 
-}export default HomePage;
+} export default HomePage;

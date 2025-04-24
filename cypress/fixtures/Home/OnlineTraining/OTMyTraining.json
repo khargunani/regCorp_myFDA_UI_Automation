@@ -1,0 +1,10 @@
+{
+    "Input": {
+        "Name": "Automation Test",
+        "Title": "Automation Test",
+        "Email": "automationtest@guerrillamail.com",
+        "tempEmail":"automationtest@guerrillamail.com",
+        "EmailSubject": "Adverse Event Reporting System Purchase for Automation Test"
+        
+    }
+}

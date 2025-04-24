@@ -1,11 +1,11 @@
 {
     "adminUser": {
-        "desiredUserId": "AdminTestUser",
+        "desiredUserId": "AutomationTest1",
         "emailAddress": "AdminTest123@gmail.com",
         "contactName": "Admin Test",
         "jobTitle": "QA",
-        "password": "AdminTest123",
-        "confirmPassword": "AdminTest123"
+        "password": "AutomationTest1",
+        "confirmPassword": "AutomationTest1"
     },
     "subUser": {
         "desiredUserId": "KimPossible",
@@ -13,7 +13,7 @@
         "contactName": "Automation Sub User",
         "jobTitle": "Junior QA",
         "password": "KimPossible",
-        "confirmPassword": "KimPossible"
+        "confirmPassword": "AutomationTest1"
     },
         "subUserAccess": {
             "0": { "key": "foodFacilityInformation", "description": "Food facility registration information" },

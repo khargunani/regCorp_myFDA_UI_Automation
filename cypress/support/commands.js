@@ -47,6 +47,7 @@ Cypress.Commands.add('getText', (element) => {
   
 
 Cypress.on('uncaught:exception',(err,runnable)=>{
+  console.error('Suppressed error:', err.message);
     return false;
 })
 
@@ -131,6 +132,47 @@ Cypress.Commands.add('MyFDALogOut', () => {
 Cypress.Commands.add('CDSignOut',() => {
 cy.get(`img[name='memberSignOut']`).click({force: true});
 })
+
+
+function processNextAssign() {
+    cy.get("table[id='regCodeOverviewsTab'] tbody tr").then($rows => {
+      let found = false;
+  
+      // Look for the first row with "Assign"
+      Cypress._.some($rows, (row, index) => {
+        const $cell = Cypress.$(row).find('td').eq(5);
+        if ($cell.text().trim() === "Assign") {
+          found = true;
+  
+          cy.wrap($cell).find('a').click({ force: true });
+  
+          cy.get('.odd > :nth-child(4) > a').should('be.visible').click();
+          cy.get('#assignRegCodeOption2').check();
+          cy.get("select[name='userid']").select("Automation_subuser");
+          cy.get('.uk-form-controls > .uk-button').click();
+          cy.get('.center > .uk-button').should('be.visible').click();
+  
+          // Wait for table to reload or settle
+          cy.get("table[id='regCodeOverviewsTab']").should('exist');
+  
+          cy.log(`Assigned row ${index + 1}`);
+  
+          // Recursively process the next one
+          processNextAssign();
+  
+          return true; // Stop looping further
+        }
+        return false;
+      });
+  
+      if (!found) {
+        cy.log("No more 'Assign' links found.");
+      }
+    });
+  }
+  
+
+  
 
 
 

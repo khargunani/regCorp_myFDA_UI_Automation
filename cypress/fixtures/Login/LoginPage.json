@@ -1,7 +1,7 @@
 {
     "validUser": {
-        "UserName": "KimPossible",
-        "UserPassword": "KimPossible"
+        "UserName": "AutomationTest1",
+        "UserPassword": "AutomationTest1"
     },
     "invalidUser": {
         "UserName": "     ",

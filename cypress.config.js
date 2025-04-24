@@ -7,6 +7,8 @@ const fs = require("fs");
 const path = require("path");
 const dayjs = require('dayjs')
 
+  
+
 module.exports = defineConfig({
   chromeWebSecurity: false,
   defaultCommandTimeout: 30000,
@@ -16,7 +18,7 @@ module.exports = defineConfig({
   env: {
     "myFDAurl": 'https://testweb.myfda.com:5643/signin',
     "CDurl": 'https://testweb.myfda.com:8743/cdlogin.jsp',
-     "myFDA": 'https://testweb.myfda.com:5643/signin',
+     "myFDA_rcup": 'https://rcup-dev.myfda.com:5643/signin',
       "MAILSLURP_API_KEY": `83c8ae93411d39f737f2784a939b3c7687125d58924efe754a7f55b02fe549d2`
   
 },
