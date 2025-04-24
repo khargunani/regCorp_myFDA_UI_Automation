@@ -3,12 +3,18 @@ orbs:
   cypress: cypress-io/cypress@3.1.4
 workflows:
   use-my-orb:
-    browser-tools: circleci/browser-tools@1.5.3 # or the latest version
-    jobs:
+    browser-tools: circleci/browser-tools@x.y 
+jobs:
+  test:
+    executor: browser-tools/default
+    steps:
       - browser-tools/install-browser-tools:
-          version: "latest"
-          install-firefox: true
-          install-geckodriver: true
+          chrome-version: 85.0.4183.102
+          firefox-version: 80.0.1
+      - run:
+          command: |
+            google-chrome --version
+            firefox --version
       - cypress/run:
           cypress-command: npx cypress run --browser chrome --headed --spec cypress\e2e\Home\FDA_Registarion\FoodFacility\FFViewCeritificates.cy.js 
                            node ./scripts/zipScript.js
