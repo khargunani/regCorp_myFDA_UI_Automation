@@ -1,25 +1,42 @@
 version: '2.1'
+
 orbs:
   cypress: cypress-io/cypress@3.1.4
-workflows:
-  use-my-orb:
-    browser-tools: circleci/browser-tools@x.y 
+  browser-tools: circleci/browser-tools@1.4.4
+
 jobs:
   test:
-    executor: browser-tools/default
+    executor: cypress/default
     steps:
-      - browser-tools/install-browser-tools:
-          chrome-version: 85.0.4183.102
-          firefox-version: 80.0.1
+      - checkout
+
+      - browser-tools/install-browser-tools
       - run:
+          name: Install Firefox
           command: |
-            google-chrome --version
-            firefox --version
+            sudo apt update
+            sudo apt install -y firefox
+
       - cypress/run:
-          cypress-command: npx cypress run --browser chrome --headed --spec cypress\e2e\Home\FDA_Registarion\FoodFacility\FFViewCeritificates.cy.js 
-                           node ./scripts/zipScript.js
-          post-steps:
-              - run: ls
-              - store_artifacts:
-                  path: cypress/reports/mochawesome-report/report.zip
-                  destination: TestReport
+          browser: firefox
+          headed: true
+          start-command: 'npm start'
+          wait-on: 'http://localhost:3000'
+          command: npx cypress run --browser firefox --spec "cypress/e2e/Home/FDA_Registarion/FoodFacility/FFViewCeritificates.cy.js"
+
+      - run:
+          name: Run zip script
+          command: node ./scripts/zipScript.js
+
+      - run:
+          name: List files
+          command: ls
+
+      - store_artifacts:
+          path: cypress/reports/mochawesome-report/report.zip
+          destination: TestReport
+
+workflows:
+  use-my-orb:
+    jobs:
+      - test
