@@ -2,32 +2,31 @@ version: '2.1'
 
 orbs:
   cypress: cypress-io/cypress@3.1.4
-  browser-tools: circleci/browser-tools@1.4.4
+
+jobs:
+  test:
+    docker:
+      - image: cypress/browsers:node-18.12.0-chrome-106.0.5249.61-firefox-106.0
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: npm ci
+
+      - run:
+          name: Run Cypress in Firefox
+          command: npx cypress run --browser firefox --headed --spec "cypress/e2e/Home/FDA_Registarion/FoodFacility/FFViewCeritificates.cy.js"
+
+      - run:
+          name: Zip test report
+          command: node ./scripts/zipScript.js
+
+      - store_artifacts:
+          path: cypress/reports/mochawesome-report/report.zip
+          destination: TestReport
 
 workflows:
   run-tests:
     jobs:
-      - cypress/run:
-          name: Cypress tests in Firefox
-          pre-steps:
-            - browser-tools/install-browser-tools
-            - run:
-                name: Install Firefox
-                command: |
-                  sudo apt-get update
-                  sudo apt-get install -y firefox
-          cypress-command: >
-            npx cypress run 
-            --browser firefox 
-            --headed 
-            --spec cypress/e2e/Home/FDA_Registarion/FoodFacility/FFViewCeritificates.cy.js
-          post-steps:
-            - run:
-                name: Run zip script
-                command: node ./scripts/zipScript.js
-            - run:
-                name: List report files
-                command: ls -R cypress/reports/mochawesome-report
-            - store_artifacts:
-                path: cypress/reports/mochawesome-report/report.zip
-                destination: TestReport
+      - test
