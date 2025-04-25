@@ -1,25 +1,18 @@
 version: '2.1'
 
-orbs:
-  cypress: cypress-io/cypress@3.1.4
-
 jobs:
   test:
     docker:
-      - image: cypress/browsers:node-18.12.0-chrome-106.0.5249.61
+      - image: cypress/included:13.11.0
     steps:
       - checkout
 
       - run:
-          name: Install dependencies
-          command: npm ci
-
-      - run:
-          name: Run Cypress in Chrome
+          name: Run Cypress Tests in Chrome
           command: npx cypress run --browser chrome --headed --spec "cypress/e2e/Home/FDA_Registarion/FoodFacility/FFViewCeritificates.cy.js"
 
       - run:
-          name: Zip test report
+          name: Zip Test Report
           command: node ./scripts/zipScript.js
 
       - store_artifacts:
