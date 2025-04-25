@@ -9,6 +9,7 @@
   "license": "ISC",
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
+    "adm-zip": "^0.5.16",
     "chai": "^5.1.0",
     "cypress": "^13.6.6",
     "cypress-downloadfile": "^1.2.4",
@@ -18,7 +19,6 @@
     "cypress-xpath": "^2.0.1"
   },
   "dependencies": {
-    "adm-zip": "^0.5.16",
     "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.15.0",
     "cypress-mailslurp": "^1.10.0",
