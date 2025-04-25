@@ -10,7 +10,9 @@ jobs:
       - run:
           name: Run Cypress Tests in Chrome
           command: npx cypress run --browser chrome --headed --spec "cypress/e2e/Home/FDA_Registarion/FoodFacility/FFDashboardPage.cy.js" || true
-
+      - run:
+          name: Install adm-zip
+          command: npm install adm-zip --save-dev
       - run:
           name: Zip Test Report
           command: node ./scripts/zipScript.js
